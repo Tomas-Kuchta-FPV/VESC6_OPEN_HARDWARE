@@ -15,6 +15,8 @@ Open source implementation of the vesc 6 hardware schematics published by Benjam
 * Economy PCBA maufacture can be used without placing the IMU - 5 boards approx £160GBP
 * Standard PCBA manufacture with placing the IMU costs more - 5 boards approx £200GBP
 * Custom board software build as well as hardware configuration files are available in the software folder.
+* This project will work even if neither of the internal traces are present in the board. The internal layers are ground planes as well as doubling up the trace to supply the power stage from the battery. 
+So you can just delete the two internal layers from the Gerber file and populate the 2 layer board.
 
 ## Testing so far...
 Release 1 has been flashed and fully tested on the bench to verify current feedback, backEMF sensing, temperature sensing and IMU work as expected.
