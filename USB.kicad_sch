@@ -2088,7 +2088,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a98e404-ec14-489d-9dee-39082d65da7c")
-		(property "Reference" "U1006"
+		(property "Reference" "U108"
 			(at 165.4811 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2178,7 +2178,7 @@
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
 				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/a8cef6d1-1c80-4870-a6aa-c1368869a3a7"
-					(reference "U1006")
+					(reference "U108")
 					(unit 1)
 				)
 			)
@@ -2273,7 +2273,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "59748eaa-484d-4fab-99c0-c984577fb1b5")
-		(property "Reference" "R1028"
+		(property "Reference" "R133"
 			(at 152.4 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2348,7 +2348,7 @@
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
 				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/a8cef6d1-1c80-4870-a6aa-c1368869a3a7"
-					(reference "R1028")
+					(reference "R133")
 					(unit 1)
 				)
 			)
@@ -2367,7 +2367,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d73368a9-e602-4b78-a616-ba44ea1471b6")
-		(property "Reference" "J1001"
+		(property "Reference" "J101"
 			(at 121.92 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2485,7 +2485,7 @@
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
 				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/a8cef6d1-1c80-4870-a6aa-c1368869a3a7"
-					(reference "J1001")
+					(reference "J101")
 					(unit 1)
 				)
 			)
@@ -2659,7 +2659,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ef270ff7-58dc-4952-a803-c776ba8f88c1")
-		(property "Reference" "R1027"
+		(property "Reference" "R132"
 			(at 142.24 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2734,7 +2734,7 @@
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
 				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/a8cef6d1-1c80-4870-a6aa-c1368869a3a7"
-					(reference "R1027")
+					(reference "R132")
 					(unit 1)
 				)
 			)

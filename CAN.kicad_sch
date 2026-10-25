@@ -1149,7 +1149,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005aeac294")
-		(property "Reference" "C1004"
+		(property "Reference" "C101"
 			(at 118.11 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1257,7 +1257,7 @@
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
 				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/b2b9706e-bd8f-4858-b41c-0ad60782e278"
-					(reference "C1004")
+					(reference "C101")
 					(unit 1)
 				)
 			)
@@ -1274,7 +1274,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005aeac2cc")
-		(property "Reference" "C1005"
+		(property "Reference" "C102"
 			(at 168.91 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1382,7 +1382,7 @@
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
 				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/b2b9706e-bd8f-4858-b41c-0ad60782e278"
-					(reference "C1005")
+					(reference "C102")
 					(unit 1)
 				)
 			)
@@ -1399,7 +1399,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005aeac462")
-		(property "Reference" "R1012"
+		(property "Reference" "R101"
 			(at 181.61 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1507,7 +1507,7 @@
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
 				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/b2b9706e-bd8f-4858-b41c-0ad60782e278"
-					(reference "R1012")
+					(reference "R101")
 					(unit 1)
 				)
 			)
@@ -1524,7 +1524,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b1ec10a")
-		(property "Reference" "U1002"
+		(property "Reference" "U101"
 			(at 145.415 70.739 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1652,7 +1652,7 @@
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
 				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/b2b9706e-bd8f-4858-b41c-0ad60782e278"
-					(reference "U1002")
+					(reference "U101")
 					(unit 1)
 				)
 			)
