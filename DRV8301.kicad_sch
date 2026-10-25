@@ -2111,10 +2111,14 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
+		(symbol "power:+3.3V"
 			(power global)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2132,7 +2136,7 @@
 					)
 				)
 			)
-			(property "Value" "+5V"
+			(property "Value" "+3.3V"
 				(at 0 3.556 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2164,7 +2168,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2175,7 +2179,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2186,7 +2190,7 @@
 					)
 				)
 			)
-			(symbol "+5V_0_1"
+			(symbol "+3.3V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -2224,12 +2228,11 @@
 					)
 				)
 			)
-			(symbol "+5V_1_1"
+			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(hide yes)
-					(name "+5V"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2359,18 +2362,22 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VCC"
+		(symbol "power:PWR_FLAG"
 			(power global)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2380,7 +2387,7 @@
 					)
 				)
 			)
-			(property "Value" "VCC"
+			(property "Value" "PWR_FLAG"
 				(at 0 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2412,7 +2419,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(property "Description" "Special symbol for telling ERC where power comes from"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2423,7 +2430,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "flag power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2434,50 +2441,11 @@
 					)
 				)
 			)
-			(symbol "VCC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_1_1"
-				(pin power_in line
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
 					(at 0 0 90)
 					(length 0)
-					(hide yes)
-					(name "VCC"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2490,6 +2458,20 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -2525,12 +2507,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "25625d99-d45f-4b2f-9e62-009a122611f4")
-	)
-	(junction
-		(at 186.69 31.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "29cd9e70-9b68-44f7-96b2-fe993c246832")
 	)
 	(junction
 		(at 162.56 96.52)
@@ -2587,6 +2563,12 @@
 		(uuid "4e7a230a-c1a4-4455-81ee-277835acf4a2")
 	)
 	(junction
+		(at 146.05 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "567220f5-25d8-444b-a40e-2cbddbfff903")
+	)
+	(junction
 		(at 162.56 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2605,13 +2587,13 @@
 		(uuid "5dffd1d6-faf9-418e-b9a0-84fb6b6b4454")
 	)
 	(junction
-		(at 109.22 38.1)
+		(at 109.22 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6aa022fb-09ce-49d9-86b1-c73b3ee817e2")
 	)
 	(junction
-		(at 83.82 154.94)
+		(at 83.82 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6fddc16f-ccc1-4ade-884c-d6efda461da8")
@@ -2671,7 +2653,7 @@
 		(uuid "a2a33a3d-c501-4e33-b67b-7d07ef8aa4a7")
 	)
 	(junction
-		(at 209.55 58.42)
+		(at 213.36 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a4911204-1308-4d17-90a9-1ff5f9c57c9b")
@@ -2689,7 +2671,7 @@
 		(uuid "b9f8b708-1745-43ec-9646-59495cbc6e07")
 	)
 	(junction
-		(at 209.55 50.8)
+		(at 213.36 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c482f4f0-b441-4301-a9f1-c7f9e511d699")
@@ -2713,7 +2695,7 @@
 		(uuid "e5889358-36b5-4652-9d71-4d4aa652a144")
 	)
 	(junction
-		(at 143.51 154.94)
+		(at 146.05 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fbaf0a73-1e37-4616-b4c8-112e1f4fca76")
@@ -2810,7 +2792,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 143.51) (xy 83.82 143.51)
+			(xy 74.93 143.51) (xy 83.82 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2830,7 +2812,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 106.68) (xy 173.99 106.68)
+			(xy 168.91 106.68) (xy 179.07 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2850,13 +2832,23 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 154.94) (xy 83.82 156.21)
+			(xy 83.82 149.86) (xy 83.82 158.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1020b588-7eb0-4b70-bbff-c77a867c3142")
+	)
+	(wire
+		(pts
+			(xy 179.07 106.68) (xy 179.07 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13b9ab1f-674b-4145-9e6f-66442e2fdecb")
 	)
 	(wire
 		(pts
@@ -2910,6 +2902,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 50.8) (xy 217.17 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "194af508-89f9-4c7f-97f0-a41447bce651")
+	)
+	(wire
+		(pts
 			(xy 177.8 43.18) (xy 177.8 31.75)
 		)
 		(stroke
@@ -2927,6 +2929,16 @@
 			(type default)
 		)
 		(uuid "19a5aacd-255a-4bf3-89c1-efd2ab61016c")
+	)
+	(wire
+		(pts
+			(xy 203.2 29.21) (xy 203.2 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b91a680-d5ba-4370-a89d-718713e95649")
 	)
 	(wire
 		(pts
@@ -2970,6 +2982,16 @@
 	)
 	(wire
 		(pts
+			(xy 247.65 25.4) (xy 247.65 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28a72a72-90da-45ad-b399-40412015e28f")
+	)
+	(wire
+		(pts
 			(xy 247.65 38.1) (xy 247.65 40.64)
 		)
 		(stroke
@@ -3010,7 +3032,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 31.75) (xy 190.5 31.75)
+			(xy 182.88 31.75) (xy 203.2 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3037,16 +3059,6 @@
 			(type default)
 		)
 		(uuid "2edc487e-09a5-4e4e-9675-a7b323f56380")
-	)
-	(wire
-		(pts
-			(xy 129.54 147.32) (xy 129.54 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f4c659c-2ccb-4fb1-808e-7868af588a89")
 	)
 	(wire
 		(pts
@@ -3130,7 +3142,17 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 50.8) (xy 209.55 50.8)
+			(xy 146.05 147.32) (xy 148.59 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f2301e7-530b-402f-b46e-3aea802efe71")
+	)
+	(wire
+		(pts
+			(xy 200.66 50.8) (xy 213.36 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3147,6 +3169,16 @@
 			(type default)
 		)
 		(uuid "43f341b3-06e9-4e7a-a26e-5365b89d76bf")
+	)
+	(wire
+		(pts
+			(xy 255.27 99.06) (xy 255.27 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44158b64-c0ba-4480-a1e6-db750fba0ca5")
 	)
 	(wire
 		(pts
@@ -3170,16 +3202,6 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 154.94) (xy 83.82 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c717b47-484c-4d70-8fcd-83c406ff2d17")
-	)
-	(wire
-		(pts
 			(xy 182.88 31.75) (xy 182.88 33.02)
 		)
 		(stroke
@@ -3190,7 +3212,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 154.94) (xy 143.51 154.94)
+			(xy 133.35 154.94) (xy 146.05 154.94)
 		)
 		(stroke
 			(width 0)
@@ -3207,6 +3229,16 @@
 			(type default)
 		)
 		(uuid "51f5536d-48d2-4807-be44-93f427952b0e")
+	)
+	(wire
+		(pts
+			(xy 200.66 48.26) (xy 200.66 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53796e21-cc78-4425-9764-75f95b21b843")
 	)
 	(wire
 		(pts
@@ -3300,16 +3332,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 38.1) (xy 109.22 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64256223-cf3b-4a78-97d3-f1dca769968f")
-	)
-	(wire
-		(pts
 			(xy 236.22 115.57) (xy 232.41 115.57)
 		)
 		(stroke
@@ -3360,7 +3382,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 143.51) (xy 83.82 142.24)
+			(xy 83.82 138.43) (xy 83.82 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3377,16 +3399,6 @@
 			(type default)
 		)
 		(uuid "6e77d4d6-0239-4c20-98f8-23ae4f71d638")
-	)
-	(wire
-		(pts
-			(xy 186.69 27.94) (xy 186.69 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7114de55-86d9-46c1-a412-07f5eb895435")
 	)
 	(wire
 		(pts
@@ -3440,13 +3452,13 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 99.06) (xy 254 99.06)
+			(xy 101.6 40.64) (xy 101.6 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "830aee7f-dfce-42cd-85ef-6370f6dc02f5")
+		(uuid "836534e9-466a-4503-882c-d50833f85e34")
 	)
 	(wire
 		(pts
@@ -3550,7 +3562,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 55.88) (xy 168.91 55.88)
+			(xy 162.56 55.88) (xy 170.18 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3680,7 +3692,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 146.05) (xy 76.2 143.51)
+			(xy 74.93 146.05) (xy 74.93 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3710,7 +3722,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 147.32) (xy 143.51 147.32)
+			(xy 133.35 147.32) (xy 146.05 147.32)
 		)
 		(stroke
 			(width 0)
@@ -3730,7 +3742,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 38.1) (xy 109.22 38.1)
+			(xy 101.6 40.64) (xy 109.22 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3840,23 +3852,23 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 39.37) (xy 81.28 40.64)
+			(xy 243.84 99.06) (xy 255.27 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c59df93f-2c90-43cc-8050-f2a07708b8b8")
+	)
+	(wire
+		(pts
+			(xy 81.28 35.56) (xy 81.28 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c8072c34-0f81-4552-9fbe-4bfe60c53e21")
-	)
-	(wire
-		(pts
-			(xy 182.88 31.75) (xy 186.69 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd48b13f-c989-4ac1-a7f0-053afcd77527")
 	)
 	(wire
 		(pts
@@ -3890,7 +3902,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 153.67) (xy 76.2 154.94)
+			(xy 74.93 153.67) (xy 74.93 156.21)
 		)
 		(stroke
 			(width 0)
@@ -3950,23 +3962,13 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 38.1) (xy 109.22 40.64)
+			(xy 109.22 35.56) (xy 109.22 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "df93f76b-86da-45ae-87e2-4b691af12b00")
-	)
-	(wire
-		(pts
-			(xy 209.55 48.26) (xy 209.55 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1fe6230-75c5-4750-aaea-24a9b80589d8")
 	)
 	(wire
 		(pts
@@ -3977,6 +3979,16 @@
 			(type default)
 		)
 		(uuid "e46ecd61-0bbe-4b9f-a151-a2cacac5967b")
+	)
+	(wire
+		(pts
+			(xy 133.35 144.78) (xy 133.35 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7916882-9533-4b08-b4e4-b3ffd9991863")
 	)
 	(wire
 		(pts
@@ -4010,7 +4022,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 58.42) (xy 209.55 58.42)
+			(xy 200.66 58.42) (xy 213.36 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4060,16 +4072,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 27.94) (xy 186.69 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f879c0e8-5893-4eb4-8e59-2292a632100f")
-	)
-	(wire
-		(pts
 			(xy 232.41 104.14) (xy 232.41 99.06)
 		)
 		(stroke
@@ -4110,7 +4112,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 154.94) (xy 83.82 154.94)
+			(xy 74.93 156.21) (xy 83.82 156.21)
 		)
 		(stroke
 			(width 0)
@@ -4158,29 +4160,65 @@
 		)
 		(uuid "feea7220-8a84-483b-9c4c-c00b9acffd7f")
 	)
-	(global_label "SUPPLY"
-		(shape input)
-		(at 190.5 27.94 0)
-		(fields_autoplaced yes)
+	(label "+5V"
+		(at 213.36 50.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right bottom)
 		)
-		(uuid "10fa1a8c-62cb-4b8f-b916-b18d737ff71b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 200.0277 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
+		(uuid "4fd79935-0ba8-4a0e-a060-94d2631894be")
+	)
+	(label "+3V3"
+		(at 146.05 147.32 180)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right bottom)
 		)
+		(uuid "573d7a4b-d016-4939-9be1-9eb2025ffb6b")
+	)
+	(label "+5V"
+		(at 247.65 25.4 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8cb28a4b-0611-4d4b-8b9e-4f83210c6233")
+	)
+	(label "+5V"
+		(at 81.28 35.56 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cf3b7f49-9aa0-4a75-af61-db8c4aa1110f")
+	)
+	(label "+3V3"
+		(at 170.18 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f5e996c5-83e6-4e5f-96f5-12bbd2d61977")
+	)
+	(label "+5V"
+		(at 83.82 138.43 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f7e80008-703f-49bc-bc2f-a3b42dffe520")
 	)
 	(hierarchical_label "INL_A"
 		(shape input)
@@ -4214,17 +4252,6 @@
 			(justify left)
 		)
 		(uuid "15a5a11b-0ea1-4f6e-b356-cc2d530615ed")
-	)
-	(hierarchical_label "SUPPLY"
-		(shape input)
-		(at 254 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1d1a7683-c090-4798-9b40-7ed0d9f3ce3b")
 	)
 	(hierarchical_label "SENS_B"
 		(shape input)
@@ -4292,17 +4319,6 @@
 		)
 		(uuid "45484f82-420e-44d0-a58e-382bb939dac5")
 	)
-	(hierarchical_label "SUPPLY"
-		(shape input)
-		(at 173.99 106.68 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "59ee13a4-660e-47e2-a73a-01cfe11439e9")
-	)
 	(hierarchical_label "INH_C"
 		(shape input)
 		(at 121.92 88.9 180)
@@ -4358,17 +4374,6 @@
 		)
 		(uuid "72cc7949-68f8-4ef8-adcb-a65c1d042672")
 	)
-	(hierarchical_label "SUPPLY"
-		(shape input)
-		(at 190.5 31.75 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "750e60a2-e808-4253-8275-b79930fb2714")
-	)
 	(hierarchical_label "CS"
 		(shape input)
 		(at 121.92 55.88 180)
@@ -4379,6 +4384,17 @@
 			(justify right)
 		)
 		(uuid "8385d9f6-6997-423b-b38d-d0ab00c45f3f")
+	)
+	(hierarchical_label "+5V"
+		(shape output)
+		(at 217.17 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "86563685-58b0-4951-837d-6c20e4842106")
 	)
 	(hierarchical_label "SENS_C"
 		(shape input)
@@ -4412,6 +4428,17 @@
 			(justify left)
 		)
 		(uuid "97cc05bf-4ed5-449c-b0c8-131e5126a7ac")
+	)
+	(hierarchical_label "+3V3"
+		(shape output)
+		(at 148.59 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9a7f4ac8-5e88-4a20-8ef9-f038628e8731")
 	)
 	(hierarchical_label "SH_A"
 		(shape input)
@@ -4578,15 +4605,14 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae17e70")
-		(property "Reference" "R14"
-			(at 118.11 29.21 90)
+		(property "Reference" "R1017"
+			(at 117.856 27.94 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "220k"
@@ -4678,15 +4704,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "168da355-63e8-46ee-afce-2e7bf75b90f3")
+			(uuid "e837be0a-8e50-4dd8-bb87-224297621c82")
 		)
 		(pin "2"
-			(uuid "7312e354-5c3e-4e36-b482-6b8d867342fb")
+			(uuid "fb6fb13f-8ec7-4492-b27c-431d2d76374c")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "R14")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "R1017")
 					(unit 1)
 				)
 			)
@@ -4703,15 +4729,14 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae19004")
-		(property "Reference" "R11"
-			(at 93.218 35.6616 0)
+		(property "Reference" "R1014"
+			(at 93.726 36.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "18k"
@@ -4803,15 +4828,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "898c4d08-c194-43c4-9c9e-92e0e53b4af8")
+			(uuid "f7f7ddf3-75c1-4b36-a895-402de2dcd98a")
 		)
 		(pin "2"
-			(uuid "98817988-30cf-4546-ba90-45637ce861a8")
+			(uuid "5bcc1b59-122d-4930-9650-a0d42a0b6347")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "R11")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "R1014")
 					(unit 1)
 				)
 			)
@@ -4828,15 +4853,14 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae19184")
-		(property "Reference" "R10"
-			(at 93.218 25.5016 0)
+		(property "Reference" "R1013"
+			(at 93.726 26.67 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "3.3k"
@@ -4928,15 +4952,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "639c605a-b57b-4caf-8ac7-10b500771d8f")
+			(uuid "3590002b-982a-4a93-b3a9-76e79d8ec0f5")
 		)
 		(pin "2"
-			(uuid "15d55e6d-9060-4642-89d1-d07ea430320e")
+			(uuid "a6f2b24c-b086-46c8-8c62-def60bf86b8e")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "R10")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "R1013")
 					(unit 1)
 				)
 			)
@@ -4953,15 +4977,14 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae19415")
-		(property "Reference" "R12"
-			(at 103.378 33.1216 0)
+		(property "Reference" "R1015"
+			(at 104.14 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "15k"
@@ -5053,15 +5076,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "02dc32d0-3d35-4cd8-be53-825162733acf")
+			(uuid "3cb0e2cc-59c4-4c7a-8319-941e489c9a09")
 		)
 		(pin "2"
-			(uuid "8238ad5b-0d11-42f2-aeba-d6201d84c218")
+			(uuid "53d5770d-2c6c-4b6a-b3d1-c3c773fb863d")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "R12")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "R1015")
 					(unit 1)
 				)
 			)
@@ -5078,8 +5101,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae1e710")
-		(property "Reference" "C16"
-			(at 102.87 24.13 0)
+		(property "Reference" "C1021"
+			(at 101.854 24.638 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5178,15 +5201,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "b4d14dcb-56f6-45e3-a696-8c7767c8ef0b")
+			(uuid "93df6ee1-fba2-4b41-b330-dcf8e7b66620")
 		)
 		(pin "2"
-			(uuid "a2974a54-1774-400a-ad36-fab9e3fc4a3c")
+			(uuid "a82dc13b-3a3e-47bd-96d2-ea294a34b464")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C16")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1021")
 					(unit 1)
 				)
 			)
@@ -5203,8 +5226,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae1e77a")
-		(property "Reference" "C18"
-			(at 110.49 29.21 0)
+		(property "Reference" "C1023"
+			(at 110.49 29.972 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5303,15 +5326,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "1acf5582-352f-43bc-bd42-0be9bf2fcd51")
+			(uuid "2fca2f04-fa7f-4a8c-ba93-789d091626ec")
 		)
 		(pin "2"
-			(uuid "88747afb-3e37-4fb3-9c46-f7475d5129cb")
+			(uuid "8ea7194f-01a1-4517-8b89-8c79f8822ea4")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C18")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1023")
 					(unit 1)
 				)
 			)
@@ -5382,88 +5405,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "d3cc8bab-1088-45d3-9c44-36bfa5df921f")
+			(uuid "67ae6641-cd9c-40fc-858f-45b778ee2df1")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 81.28 39.37 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ae1e873")
-		(property "Reference" "#PWR036"
-			(at 81.28 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5VA"
-			(at 81.661 34.9758 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 81.28 39.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "65d0f0fa-4a0b-4735-90ae-7d709ab09aad")
-		)
-		(instances
-			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -5480,14 +5427,15 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae1f533")
-		(property "Reference" "C19"
-			(at 115.57 69.85 90)
+		(property "Reference" "C1024"
+			(at 113.03 70.104 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "22n"
@@ -5578,15 +5526,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "4861af47-cdfb-42fb-aa65-042643694cd3")
+			(uuid "e9b060d6-de05-4935-8e31-faff98d48cb1")
 		)
 		(pin "2"
-			(uuid "2057fbe6-d532-4a1b-98f4-f179ea789e61")
+			(uuid "177b67fa-340c-46d6-9730-ef914f6a8d5d")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C19")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1024")
 					(unit 1)
 				)
 			)
@@ -5603,7 +5551,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae1f584")
-		(property "Reference" "C15"
+		(property "Reference" "C1019"
 			(at 95.25 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5703,15 +5651,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "7244592a-0a96-452d-99eb-6871adc3612a")
+			(uuid "bce5245f-0660-45e2-b818-a04ede3c4e50")
 		)
 		(pin "2"
-			(uuid "331c6bae-353f-4153-acfb-1ff214e3b999")
+			(uuid "20584969-c1b6-4947-88c1-a85a9411f398")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C15")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1019")
 					(unit 1)
 				)
 			)
@@ -5728,7 +5676,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae1f5b6")
-		(property "Reference" "C14"
+		(property "Reference" "C1018"
 			(at 85.09 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5828,15 +5776,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "0e462d87-3f9d-4939-9b60-198fe3c076cd")
+			(uuid "d188c1fe-87cf-437e-827e-66bdc3798c5d")
 		)
 		(pin "2"
-			(uuid "c31c242f-9b63-4cd7-a377-82985f5cb941")
+			(uuid "05ae00c9-77f3-4620-ad97-352b9b01d362")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C14")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1018")
 					(unit 1)
 				)
 			)
@@ -5907,11 +5855,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "5430d029-9d3f-473a-a5c6-393998ec851d")
+			(uuid "d5996fb4-3d1f-424d-967b-576ea1737c41")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR037")
 					(unit 1)
 				)
@@ -5929,8 +5877,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae204d2")
-		(property "Reference" "C17"
-			(at 101.6 95.25 0)
+		(property "Reference" "C1020"
+			(at 100.838 95.758 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6029,15 +5977,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "f7973c04-ae62-4ef8-8cdd-d5f31bb871f4")
+			(uuid "39d23164-b632-4607-8777-07e70a02ebea")
 		)
 		(pin "2"
-			(uuid "e3de2907-6354-435f-b734-ba7e469ea0ad")
+			(uuid "d97e25b9-8a95-4f7d-9630-f7ab6dbe8949")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C17")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1020")
 					(unit 1)
 				)
 			)
@@ -6054,8 +6002,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae20529")
-		(property "Reference" "C20"
-			(at 109.22 106.68 0)
+		(property "Reference" "C1022"
+			(at 108.204 106.934 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6154,15 +6102,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "ada9f860-520a-4111-ae60-ed8770ea640f")
+			(uuid "7a628b63-f3d4-4351-93c8-661d10e65ae3")
 		)
 		(pin "2"
-			(uuid "4f0024bd-63b8-4297-b43c-5f969daff9f8")
+			(uuid "e9cc928d-766a-4a5a-b780-e97b22ecbe2c")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C20")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1022")
 					(unit 1)
 				)
 			)
@@ -6233,11 +6181,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "2211e764-a34a-4698-9daf-e460c8b642e5")
+			(uuid "ebae356c-8d37-4cf2-8b51-dd5a39c2baa6")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR040")
 					(unit 1)
 				)
@@ -6309,11 +6257,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "c4bc13af-0d4f-43ac-b1fb-b6381ae8d5d5")
+			(uuid "878f11f0-a977-499c-b242-d42f92f36d18")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR044")
 					(unit 1)
 				)
@@ -6331,7 +6279,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae230a9")
-		(property "Reference" "C22"
+		(property "Reference" "C1027"
 			(at 165.1 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6431,15 +6379,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "7e7d102f-7d54-4312-90dc-f41713838620")
+			(uuid "dd670be0-0109-4cd0-818b-5792ce36c64b")
 		)
 		(pin "2"
-			(uuid "0085d705-9b16-4aea-8424-976cd49ee1af")
+			(uuid "7b7989fe-32a9-4195-be94-2f16fb8bf30d")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C22")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1027")
 					(unit 1)
 				)
 			)
@@ -6456,7 +6404,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae231ce")
-		(property "Reference" "C27"
+		(property "Reference" "C1033"
 			(at 184.15 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6556,15 +6504,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "8ce7826f-d591-49a3-a203-d8f821dc1a86")
+			(uuid "9e67979a-0a63-4c15-b924-94076674f002")
 		)
 		(pin "2"
-			(uuid "6ef87bae-5358-4aed-9a58-e8b8266672ca")
+			(uuid "397e1b64-ff6b-4c0d-91e0-7482c37be06f")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C27")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1033")
 					(unit 1)
 				)
 			)
@@ -6581,14 +6529,15 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae23218")
-		(property "Reference" "C23"
-			(at 177.8 57.15 90)
+		(property "Reference" "C1029"
+			(at 175.26 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "220n"
@@ -6679,15 +6628,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "dc88b731-a1ca-4801-ad3c-4ee484b9f2c2")
+			(uuid "54df25e9-d853-4ece-b532-541bed37b263")
 		)
 		(pin "2"
-			(uuid "151b16b8-f17c-4a0f-a223-a64387476485")
+			(uuid "46e4befb-eca7-4834-974e-a892aa671ebf")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C23")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1029")
 					(unit 1)
 				)
 			)
@@ -6704,14 +6653,15 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae2407b")
-		(property "Reference" "C28"
-			(at 182.88 46.99 90)
+		(property "Reference" "C1032"
+			(at 180.34 46.99 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "100n"
@@ -6802,15 +6752,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "bc9d52b2-c70a-4768-b78c-5dcb5a0ddf2f")
+			(uuid "9ae8c27b-401c-42c4-9aae-469973110624")
 		)
 		(pin "2"
-			(uuid "3835104e-bc0b-42f1-a3b5-1c62f503ed28")
+			(uuid "7b080b95-4830-4e20-a199-823c4bb9e93e")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C28")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1032")
 					(unit 1)
 				)
 			)
@@ -6827,14 +6777,15 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae2436f")
-		(property "Reference" "C24"
-			(at 177.8 69.85 90)
+		(property "Reference" "C1030"
+			(at 175.26 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "220n"
@@ -6925,15 +6876,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c1edacaf-9e50-425f-a4a3-716970567f5f")
+			(uuid "aecab377-3ba7-45c7-95a2-5fc27cec1319")
 		)
 		(pin "2"
-			(uuid "55438d3c-00d0-4e17-a634-62966b596064")
+			(uuid "83db733c-a5e3-4a07-82aa-b8e989d87c6b")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C24")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1030")
 					(unit 1)
 				)
 			)
@@ -6950,14 +6901,15 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae243bd")
-		(property "Reference" "C25"
-			(at 177.8 82.55 90)
+		(property "Reference" "C1031"
+			(at 175.26 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "220n"
@@ -7048,15 +7000,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "9e4854ee-c510-4bbd-afd8-631f9a48580e")
+			(uuid "f0e676ca-ce57-4526-be3a-663aed79d4f2")
 		)
 		(pin "2"
-			(uuid "44c08ce6-6c73-4599-9ece-998c1ca1a404")
+			(uuid "39758e69-c7ff-44e4-9d8d-f6d94299beb5")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C25")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1031")
 					(unit 1)
 				)
 			)
@@ -7127,11 +7079,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "96cbedd5-475a-40f0-9af6-14aaacc09901")
+			(uuid "cebd356f-83c1-45e3-b836-9bc067c0a492")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR048")
 					(unit 1)
 				)
@@ -7203,11 +7155,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "0c1c25a5-ae05-4a16-8df9-a931f5d10842")
+			(uuid "51d5c6ce-fd4b-4c47-9989-bec906466988")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR050")
 					(unit 1)
 				)
@@ -7225,7 +7177,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae28ccf")
-		(property "Reference" "C31"
+		(property "Reference" "C1034"
 			(at 203.581 53.4416 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7325,15 +7277,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "e181d565-9586-4bf6-bb4f-867314a39c15")
+			(uuid "ec80005f-12ce-4a5e-a67d-560acd1dad75")
 		)
 		(pin "2"
-			(uuid "06632abc-f3d9-417a-b807-733a16e395ee")
+			(uuid "973a20be-f481-4ab9-b2e3-e76c1546e6c7")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C31")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1034")
 					(unit 1)
 				)
 			)
@@ -7341,7 +7293,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 209.55 54.61 0)
+		(at 213.36 54.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7350,8 +7302,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae28dc6")
-		(property "Reference" "C32"
-			(at 212.471 53.4416 0)
+		(property "Reference" "C1035"
+			(at 216.281 53.4416 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7362,7 +7314,7 @@
 			)
 		)
 		(property "Value" "100u"
-			(at 212.471 55.753 0)
+			(at 216.281 55.753 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7373,7 +7325,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
-			(at 210.5152 58.42 0)
+			(at 214.3252 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7384,7 +7336,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2111161030_Kyocera-AVX-TAJB107K006RNJ-_C16133.pdf"
-			(at 209.55 54.61 0)
+			(at 213.36 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7395,7 +7347,7 @@
 			)
 		)
 		(property "Description" "CAP 100uF 6.3V 1.7Ω@100kHz ±10% 1210 Tantalum"
-			(at 209.55 54.61 0)
+			(at 213.36 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7406,7 +7358,7 @@
 			)
 		)
 		(property "LCSC part no." "C16133"
-			(at 209.55 54.61 0)
+			(at 213.36 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7417,7 +7369,7 @@
 			)
 		)
 		(property "Critical" "N"
-			(at 209.55 54.61 0)
+			(at 213.36 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7428,7 +7380,7 @@
 			)
 		)
 		(property "Link" "https://jlcpcb.com/partdetail/KyoceraAvx-TAJB107K006RNJ/C16133"
-			(at 209.55 54.61 0)
+			(at 213.36 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7439,7 +7391,7 @@
 			)
 		)
 		(property "MFP" "TAJB107K006RNJ"
-			(at 209.55 54.61 0)
+			(at 213.36 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7450,91 +7402,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "f3908aa1-5826-47ff-a1cc-dc77546758ea")
+			(uuid "8ae063cd-09c0-45f8-a0e3-d0ffbd2a3e55")
 		)
 		(pin "2"
-			(uuid "c28069b2-6ad3-4558-8513-38d165d26da9")
+			(uuid "16aa1c41-b4d2-419b-92db-e675bd80c27d")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 209.55 48.26 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ae28e4d")
-		(property "Reference" "#PWR051"
-			(at 209.55 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5VA"
-			(at 209.931 43.8658 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 209.55 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 209.55 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 209.55 48.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "067841eb-d019-4e4b-9cd1-652d10c7cad8")
-		)
-		(instances
-			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "#PWR051")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1035")
 					(unit 1)
 				)
 			)
@@ -7542,7 +7418,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 209.55 58.42 0)
+		(at 213.36 58.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7552,7 +7428,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae28ebf")
 		(property "Reference" "#PWR052"
-			(at 209.55 64.77 0)
+			(at 213.36 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7563,7 +7439,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 209.677 62.8142 0)
+			(at 213.487 62.8142 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7573,7 +7449,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.55 58.42 0)
+			(at 213.36 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7584,7 +7460,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 58.42 0)
+			(at 213.36 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7595,7 +7471,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 209.55 58.42 0)
+			(at 213.36 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7605,11 +7481,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "a099766c-5db3-4006-8bf9-84d99ea23762")
+			(uuid "60530517-0ee8-40c1-9991-509340c7f37d")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR052")
 					(unit 1)
 				)
@@ -7681,11 +7557,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "25c73cf5-2daa-4b48-a85c-af0d7b46ac70")
+			(uuid "61065218-b468-479e-a2da-d18c8fb12414")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR049")
 					(unit 1)
 				)
@@ -7703,7 +7579,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae2f192")
-		(property "Reference" "C26"
+		(property "Reference" "C1028"
 			(at 170.18 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7803,15 +7679,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "3117141d-6a31-4cfd-8d43-66346ae391a2")
+			(uuid "f72439c6-6bd4-4f80-a7e3-44db675c934a")
 		)
 		(pin "2"
-			(uuid "cb95c5d8-ccc9-4626-9bdb-7bec85540b50")
+			(uuid "52935ed2-ba43-4758-9f75-750fe796c22c")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C26")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1028")
 					(unit 1)
 				)
 			)
@@ -7882,164 +7758,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "72ac2a97-b38a-4c04-b9a2-f62dc484df64")
+			(uuid "4c4fe8ab-8537-4010-ae75-c092bfc702c3")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 168.91 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ae2f4b5")
-		(property "Reference" "#PWR046"
-			(at 168.91 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3a"
-			(at 169.3418 51.4858 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.91 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 168.91 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 168.91 55.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b0667022-57ac-4e9a-aa91-517c282e55a3")
-		)
-		(instances
-			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 247.65 30.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ae3bab9")
-		(property "Reference" "#PWR053"
-			(at 247.65 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5VA"
-			(at 248.031 26.0858 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 247.65 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 247.65 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 247.65 30.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4ce5eb93-3ad8-42d6-a612-696b86de4205")
-		)
-		(instances
-			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -8110,11 +7834,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "55587c73-d737-408e-97ea-0ca9a87c67ff")
+			(uuid "20a58d83-9870-4828-b700-8ed6810448e7")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR054")
 					(unit 1)
 				)
@@ -8132,7 +7856,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae3bc08")
-		(property "Reference" "D5"
+		(property "Reference" "D1004"
 			(at 249.6312 32.893 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8232,15 +7956,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "59f52159-1cc2-4b08-8f46-fe4ef83a9b62")
+			(uuid "9a1309ef-0f04-455c-9138-bba620ec0abe")
 		)
 		(pin "2"
-			(uuid "32084c2a-0272-43c8-b7a6-50a81479cc28")
+			(uuid "6215813a-8a58-443d-9337-77e0fa4a92c2")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "D5")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "D1004")
 					(unit 1)
 				)
 			)
@@ -8257,14 +7981,15 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae3d756")
-		(property "Reference" "R15"
-			(at 245.11 97.79 90)
+		(property "Reference" "R1019"
+			(at 242.824 98.044 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "39k"
@@ -8355,15 +8080,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "52d5aca5-2c45-4aa3-a64f-0843a89d1019")
+			(uuid "77048f24-d4f0-4a26-9fea-7fde10fae85e")
 		)
 		(pin "2"
-			(uuid "144142ac-c230-46df-ae0f-a24931598dda")
+			(uuid "55a67a3e-82a6-4765-b069-2dcc1ccc2352")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "R15")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "R1019")
 					(unit 1)
 				)
 			)
@@ -8380,14 +8105,15 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae3d7ca")
-		(property "Reference" "R16"
-			(at 245.11 102.87 90)
+		(property "Reference" "R1020"
+			(at 242.824 103.124 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "2k2"
@@ -8478,15 +8204,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "b250732b-7f2b-49ba-8960-d4218cdf8291")
+			(uuid "12a4a971-16e7-43bc-b341-48dbfa044630")
 		)
 		(pin "2"
-			(uuid "42b7daf2-5aa3-461b-9b93-3aeae9a70818")
+			(uuid "266e4da6-250f-4870-8ad7-23e7aa3dfa98")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "R16")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "R1020")
 					(unit 1)
 				)
 			)
@@ -8503,14 +8229,15 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae3d812")
-		(property "Reference" "R17"
-			(at 245.11 110.49 90)
+		(property "Reference" "R1021"
+			(at 242.824 110.744 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "39k"
@@ -8601,15 +8328,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "5aaf31cd-299d-4ffc-a002-a52281745d47")
+			(uuid "b896ddec-3ac9-4fe1-9224-856e8e9d52ed")
 		)
 		(pin "2"
-			(uuid "e47ee89e-f990-4adc-8af1-d6262d5b9d81")
+			(uuid "e7facc49-6a83-4dc1-ab12-d00e6ae6ae0f")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "R17")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "R1021")
 					(unit 1)
 				)
 			)
@@ -8626,14 +8353,15 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae3d860")
-		(property "Reference" "R18"
-			(at 245.11 114.3 90)
+		(property "Reference" "R1022"
+			(at 242.824 114.554 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "2k2"
@@ -8724,15 +8452,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "3843ba3e-1351-4af6-b05c-0d4976da35c9")
+			(uuid "8884c070-9579-4466-8fea-72c12b9b3edb")
 		)
 		(pin "2"
-			(uuid "f55de8e5-977f-40ae-bea6-79823d2e2ff3")
+			(uuid "e46a1313-fab8-4add-a2d6-b71100e25966")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "R18")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "R1022")
 					(unit 1)
 				)
 			)
@@ -8749,14 +8477,15 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae3d8ae")
-		(property "Reference" "R19"
-			(at 245.11 121.92 90)
+		(property "Reference" "R1023"
+			(at 242.824 122.174 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "39k"
@@ -8847,15 +8576,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "94def480-d50f-4c0f-826d-7d4ce71c9c4e")
+			(uuid "d5db013c-9e8c-4a73-8fa3-1d41d78610e2")
 		)
 		(pin "2"
-			(uuid "9bd706f6-d93e-4913-96b8-54a4b1dc24a9")
+			(uuid "21ed82b2-0fc3-498b-946e-c77aaa4e7ef2")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "R19")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "R1023")
 					(unit 1)
 				)
 			)
@@ -8872,14 +8601,15 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae3d908")
-		(property "Reference" "R20"
-			(at 245.11 125.73 90)
+		(property "Reference" "R1024"
+			(at 242.824 125.984 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "2k2"
@@ -8970,15 +8700,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "154d3377-6296-4aab-9aa3-3cabfc82996f")
+			(uuid "96947a41-d151-401e-8bdc-8bcc4dd396f3")
 		)
 		(pin "2"
-			(uuid "176b056b-2165-4705-b0a1-c5220a69ed68")
+			(uuid "276b7407-5065-4cc1-b775-d22d98909715")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "R20")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "R1024")
 					(unit 1)
 				)
 			)
@@ -8995,14 +8725,15 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae3d956")
-		(property "Reference" "R21"
-			(at 245.11 135.89 90)
+		(property "Reference" "R1025"
+			(at 242.824 136.144 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "39k"
@@ -9093,15 +8824,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "cfc232b9-1b02-4eb7-97dd-68df00a0c5a8")
+			(uuid "50ea98a7-be2a-4792-a40d-bdd77c5a6605")
 		)
 		(pin "2"
-			(uuid "248bf024-709d-488b-8e53-cc221871009f")
+			(uuid "a88d4147-863c-4e25-9028-9eecab568b9f")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "R21")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "R1025")
 					(unit 1)
 				)
 			)
@@ -9118,14 +8849,15 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae3d9ac")
-		(property "Reference" "R22"
-			(at 245.11 139.7 90)
+		(property "Reference" "R1026"
+			(at 242.824 139.954 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "2k2"
@@ -9216,15 +8948,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "77b9137c-a4a6-4c6a-8262-aaa05d0a0892")
+			(uuid "34881ca1-1035-424a-8fda-496fa7b2cac6")
 		)
 		(pin "2"
-			(uuid "9d1b3872-3fec-4346-a503-670380a537a4")
+			(uuid "76d35137-2b0c-4318-b910-b5e9dd68e7f2")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "R22")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "R1026")
 					(unit 1)
 				)
 			)
@@ -9295,11 +9027,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "3f273b02-486f-4ee7-aae1-a80f5d2088c7")
+			(uuid "cdf99f36-bd0d-410d-be93-d7e3dd57085a")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR055")
 					(unit 1)
 				)
@@ -9371,11 +9103,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "1c0aebba-16bf-4237-802e-431e184231e5")
+			(uuid "a3880df9-d042-4427-a704-6feae20dc9de")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR056")
 					(unit 1)
 				)
@@ -9447,11 +9179,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "ac4c8f26-6862-4686-a63f-ba999f649c57")
+			(uuid "e318eb25-d85a-4e36-91cf-2bc555b379a0")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR057")
 					(unit 1)
 				)
@@ -9523,11 +9255,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "332e694d-f32e-4513-b4bf-0775641e1cc9")
+			(uuid "eca1228d-2aac-4ce0-81f3-50b519561cd6")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR058")
 					(unit 1)
 				)
@@ -9545,7 +9277,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005aebec40")
-		(property "Reference" "R13"
+		(property "Reference" "R1016"
 			(at 107.95 50.8 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9643,15 +9375,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "943c6d53-f8cc-4401-ad29-eea14dff3bbc")
+			(uuid "4d08a33a-4c85-4b50-b0ad-ed1c93f6cd93")
 		)
 		(pin "2"
-			(uuid "90e386f1-b341-40ad-94f7-f92d8b28062f")
+			(uuid "98be44b4-1e08-4d5e-9de8-aa9f17f53e59")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "R13")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "R1016")
 					(unit 1)
 				)
 			)
@@ -9722,11 +9454,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "d7fa7e3c-80a0-494d-b064-b93c57d26230")
+			(uuid "83185350-edff-4f1f-b8ee-976cc551a0e6")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR041")
 					(unit 1)
 				)
@@ -9744,7 +9476,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b1748ec")
-		(property "Reference" "L1"
+		(property "Reference" "L1001"
 			(at 124.46 144.78 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9842,15 +9574,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "04d532d5-3cbd-4b91-80b2-0273d6c78ca3")
+			(uuid "c7733a3f-4d34-4784-a1bd-ad03e6932e6c")
 		)
 		(pin "2"
-			(uuid "0d762a65-d233-49af-be3c-6103b4827993")
+			(uuid "c8887511-ad70-4b44-a447-383194c96451")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "L1")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "L1001")
 					(unit 1)
 				)
 			)
@@ -9867,8 +9599,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b17538b")
-		(property "Reference" "C64"
-			(at 135.89 148.59 0)
+		(property "Reference" "C1025"
+			(at 133.604 149.098 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9879,7 +9611,7 @@
 			)
 		)
 		(property "Value" "2.2uF"
-			(at 134.62 153.67 0)
+			(at 134.112 153.416 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9967,15 +9699,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "4051941c-bf6a-49d3-9db8-6e4bc4f1ce7e")
+			(uuid "0c8211fe-048a-4fc0-afdc-3234b24a142c")
 		)
 		(pin "2"
-			(uuid "c1b1c623-a8e6-4a00-96fb-dc77f4f1f60f")
+			(uuid "f7fe0732-9505-46af-8b7d-5a8b04af88d4")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C64")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1025")
 					(unit 1)
 				)
 			)
@@ -9983,7 +9715,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 143.51 154.94 0)
+		(at 146.05 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9993,7 +9725,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b1822c3")
 		(property "Reference" "#PWR045"
-			(at 143.51 161.29 0)
+			(at 146.05 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10004,7 +9736,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 143.637 159.3342 0)
+			(at 146.177 159.3342 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10014,7 +9746,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 154.94 0)
+			(at 146.05 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10025,7 +9757,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 154.94 0)
+			(at 146.05 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10036,7 +9768,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 143.51 154.94 0)
+			(at 146.05 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10046,11 +9778,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "347bb3a4-7b43-4952-a15b-1b6880a8c7bc")
+			(uuid "c39dc56b-2e51-48df-9750-363dc4bb04d0")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR045")
 					(unit 1)
 				)
@@ -10058,84 +9790,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 129.54 140.97 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005b189c7e")
-		(property "Reference" "#PWR043"
-			(at 129.54 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3a"
-			(at 129.9718 136.5758 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 129.54 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 129.54 140.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "53d90866-2038-4630-ba69-a6a01b68e0aa")
-		)
-		(instances
-			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "#PWR043")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 76.2 149.86 0)
+		(at 74.93 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10144,8 +9800,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b18a69c")
-		(property "Reference" "C13"
-			(at 77.47 147.32 0)
+		(property "Reference" "C1017"
+			(at 76.2 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10156,7 +9812,7 @@
 			)
 		)
 		(property "Value" "2.2uF"
-			(at 77.47 152.4 0)
+			(at 76.2 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10167,7 +9823,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 77.1652 153.67 0)
+			(at 75.8952 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10178,7 +9834,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2304140030_Samsung-Electro-Mechanics-CL10A225KO8NNNC_C23630.pdf"
-			(at 76.2 149.86 0)
+			(at 74.93 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10189,7 +9845,7 @@
 			)
 		)
 		(property "Description" "CAP 16V 2.2uF X5R ±10% 0603 MLCC"
-			(at 76.2 149.86 0)
+			(at 74.93 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10200,7 +9856,7 @@
 			)
 		)
 		(property "LCSC part no." "C23630"
-			(at 76.2 149.86 0)
+			(at 74.93 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10211,7 +9867,7 @@
 			)
 		)
 		(property "Critical" "N"
-			(at 76.2 149.86 0)
+			(at 74.93 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10222,7 +9878,7 @@
 			)
 		)
 		(property "Link" "https://jlcpcb.com/partdetail/24366-CL10A225KO8NNNC/C23630"
-			(at 76.2 149.86 0)
+			(at 74.93 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10233,7 +9889,7 @@
 			)
 		)
 		(property "MFP" "CL10A225KO8NNNC"
-			(at 76.2 149.86 0)
+			(at 74.93 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10244,91 +9900,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "fd80c2f8-9f81-4b28-9689-1872515dbe47")
+			(uuid "dde456af-f709-48d2-a41a-1aa6cc457447")
 		)
 		(pin "2"
-			(uuid "e71582a4-574c-4ddf-938c-3ef7a7c05f27")
+			(uuid "af2d0b5e-3878-4c90-975d-53607bb004b0")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 83.82 142.24 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005b19ff3f")
-		(property "Reference" "#PWR038"
-			(at 83.82 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5VA"
-			(at 84.201 137.8458 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.82 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.82 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 83.82 142.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "731a7d70-0693-48b0-90f7-22f4ee1fd587")
-		)
-		(instances
-			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "#PWR038")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1017")
 					(unit 1)
 				)
 			)
@@ -10336,7 +9916,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 83.82 156.21 0)
+		(at 83.82 158.75 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10346,7 +9926,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b1a00ff")
 		(property "Reference" "#PWR039"
-			(at 83.82 162.56 0)
+			(at 83.82 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10357,7 +9937,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 83.947 160.6042 0)
+			(at 83.947 163.1442 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10367,7 +9947,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 156.21 0)
+			(at 83.82 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10378,7 +9958,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 156.21 0)
+			(at 83.82 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10389,7 +9969,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 83.82 156.21 0)
+			(at 83.82 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10399,11 +9979,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "7ada98a9-13ee-4cf6-8aa3-1106dd6d47d3")
+			(uuid "94312f41-320a-41c8-90d6-c39554e6878d")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR039")
 					(unit 1)
 				)
@@ -10421,7 +10001,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b1af007")
-		(property "Reference" "U3"
+		(property "Reference" "U1005"
 			(at 142.24 30.8102 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10519,180 +10099,180 @@
 			)
 		)
 		(pin "51"
-			(uuid "4fb0bff6-6312-465f-b724-e0cd0c7442be")
+			(uuid "d3b4cf4c-d0b8-4e33-8cd9-f7e7ee964428")
 		)
 		(pin "1"
-			(uuid "c5045078-56eb-4804-9701-71177f757880")
+			(uuid "43136f68-94ea-4821-8092-4f236f17dbb6")
 		)
 		(pin "10"
-			(uuid "daf0b65f-0cf6-42f1-92c0-aa91dc91e244")
+			(uuid "3819b10f-b294-43c7-9a7c-390e42f5feb0")
 		)
 		(pin "11"
-			(uuid "02de2b3b-1059-41a0-b913-4ba0cb1eeb3f")
+			(uuid "fcdd75cf-28f5-49e8-953c-cd1b2ab81312")
 		)
 		(pin "12"
-			(uuid "30f620b2-6486-4e8d-afc4-bac12dd1fbf5")
+			(uuid "00e0118c-5500-44f8-b917-988a94e4801c")
 		)
 		(pin "13"
-			(uuid "944a6f71-21af-407b-b704-c5bd094f0d50")
+			(uuid "32702209-932f-4b60-8f53-1b2496a84158")
 		)
 		(pin "14"
-			(uuid "ec4976bd-238c-408a-9b53-7e9933418ed9")
+			(uuid "c9a52879-0dd2-4a47-8fe5-f78f4aca6773")
 		)
 		(pin "15"
-			(uuid "b816522c-506c-4bdd-a3b2-d459b7f983a6")
+			(uuid "3955ffba-790b-402c-895c-bea0e0cc104a")
 		)
 		(pin "16"
-			(uuid "1436e589-c426-41c6-868e-fd0c09e4451f")
+			(uuid "8c377b67-870b-4bfb-9a32-38557adb2a53")
 		)
 		(pin "17"
-			(uuid "0e2242b2-1eb1-4430-8321-bfc7babb1885")
+			(uuid "46a31277-2156-4f14-949a-e2c0f71aa93c")
 		)
 		(pin "18"
-			(uuid "61cd1461-78eb-4a35-b61e-76600261e6c1")
+			(uuid "41d86cdb-ef38-42a5-9955-1e8bf69cfa7e")
 		)
 		(pin "19"
-			(uuid "61181217-1346-4deb-9d72-06f768134bc3")
+			(uuid "8bba53e2-981f-4b34-afa2-cd2fa98d2eae")
 		)
 		(pin "2"
-			(uuid "9a0c4f94-6f6e-45b9-9073-4b59a24d1ec5")
+			(uuid "3424f442-dd32-4180-8e4f-2c319e0c4eb8")
 		)
 		(pin "20"
-			(uuid "11858154-abaf-4a1c-8db7-02e26160c825")
+			(uuid "21b7af2a-414e-4e7f-b276-da3720246adc")
 		)
 		(pin "21"
-			(uuid "b8448694-7a42-43ef-b752-767d48291fc5")
+			(uuid "b5b59924-aaff-45c0-b495-52b8bfd1302e")
 		)
 		(pin "22"
-			(uuid "2c836d86-4c09-45cd-bbf2-5361873cdf5e")
+			(uuid "3fba94f3-4992-4678-b86f-0628474a717c")
 		)
 		(pin "23"
-			(uuid "31a01fa3-be0a-4cdc-89e1-aea579e740f9")
+			(uuid "028931c2-da9c-44f0-9d64-96840eef5cd1")
 		)
 		(pin "24"
-			(uuid "fa16bebd-4d40-4163-be0c-b7ccde7b268c")
+			(uuid "f721556d-167d-4af1-aa94-0fa574fbc63d")
 		)
 		(pin "25"
-			(uuid "2122ed76-816a-476b-8fce-90fd9b5acbdd")
+			(uuid "2fd6b758-ead2-4478-a979-d1102bc14344")
 		)
 		(pin "26"
-			(uuid "622cc8e4-21a1-4a93-b63b-285a928fc322")
+			(uuid "cc6f3f29-b3c6-4209-b508-a0748fe030ed")
 		)
 		(pin "27"
-			(uuid "7fdcb2ab-7307-4236-9997-052e0a836620")
+			(uuid "d5c2c77b-7c83-4615-9c33-8da631d64975")
 		)
 		(pin "28"
-			(uuid "b0dc6b2c-a719-4992-97e1-2ee5a681e6da")
+			(uuid "ee64904a-6fec-4a0e-b201-76493edf0f5c")
 		)
 		(pin "29"
-			(uuid "8d90f663-1cea-4eaa-9b96-2ef0f6f234bf")
+			(uuid "2f67d5a0-8dce-4052-a37b-f5958f7a773b")
 		)
 		(pin "3"
-			(uuid "b834cb53-e2d2-4eee-9179-745c89a021bf")
+			(uuid "773e236f-633b-45c0-8895-b3e8703fb73a")
 		)
 		(pin "30"
-			(uuid "942bd01b-01ec-4e6c-8d58-07ee142aeb94")
+			(uuid "ea1fc61d-200d-47d1-a9f4-4a8efff656d3")
 		)
 		(pin "31"
-			(uuid "7af11cad-0d2b-4116-a37d-b31ffc73e549")
+			(uuid "3f8e6cbc-12bf-46bb-92fd-66931357b677")
 		)
 		(pin "32"
-			(uuid "24cc17bd-b4c6-4205-b91f-7c061c0e9a05")
+			(uuid "6540fc83-21b6-43e4-aa9d-15aabfef2495")
 		)
 		(pin "33"
-			(uuid "76408667-1d9c-451b-833b-5350ed63a2ef")
+			(uuid "f8126286-2b5a-4952-a885-bbae4b1ff799")
 		)
 		(pin "34"
-			(uuid "114b6190-50a8-4479-abcd-5881fcf9d4ac")
+			(uuid "9167daac-09bf-4d2f-82f4-d5b18c0998b3")
 		)
 		(pin "35"
-			(uuid "27c1be25-45e9-4752-bd7b-2cafc49021a2")
+			(uuid "7b2f3e06-5e30-4245-8ade-7ec98e0c3462")
 		)
 		(pin "36"
-			(uuid "8b34a685-86d7-4b94-a908-55940195a9be")
+			(uuid "0a45753e-ab65-4c95-86c2-db77193ffdbe")
 		)
 		(pin "37"
-			(uuid "34404c50-d51d-44fe-a12b-a1dd6ae09b33")
+			(uuid "df59ff05-f034-41e0-9a73-b898b067a420")
 		)
 		(pin "38"
-			(uuid "0c128885-02be-43f6-b48b-833e50cb9796")
+			(uuid "e40d7fa0-77dd-4cbd-bef0-75bd333ec060")
 		)
 		(pin "39"
-			(uuid "61cd2cbc-5c83-4bd7-bb9d-6631f2d0212d")
+			(uuid "d61f6429-4191-41fa-9072-4638cb14c4f2")
 		)
 		(pin "4"
-			(uuid "15e6d5fa-8dcb-402b-9912-6c80c8b34d58")
+			(uuid "83d76bc4-bbdd-45ff-8b08-013bd8fd98ae")
 		)
 		(pin "40"
-			(uuid "8a704ef6-3e52-4cf0-84e7-8325a4c79e94")
+			(uuid "0417a97f-4304-4f20-9bde-a6645e2cb49f")
 		)
 		(pin "41"
-			(uuid "b7a50691-3275-46ea-9972-e4810e651648")
+			(uuid "443733c4-5eab-4426-beb3-3d41f30388cf")
 		)
 		(pin "42"
-			(uuid "8f97d714-af85-42e8-8116-41032cc2d5d3")
+			(uuid "5e27d558-5d08-4593-b016-a738cf54b09a")
 		)
 		(pin "43"
-			(uuid "d1aae264-3cf0-4c15-950b-e49a70b32c08")
+			(uuid "e01c6148-e8a2-467b-b0fe-94656af27c6a")
 		)
 		(pin "44"
-			(uuid "ca773b20-23b6-4cf4-a049-880d4b0eace5")
+			(uuid "c38d8aa4-5862-4243-b060-e2be3443fe84")
 		)
 		(pin "45"
-			(uuid "fb2a71d9-7793-49c4-b072-15030168de1a")
+			(uuid "11dc34b9-8ed8-40e5-8d63-888ae2335dcb")
 		)
 		(pin "46"
-			(uuid "bdc09dfb-7a6a-4b06-a2b7-9e02dcbef99c")
+			(uuid "29e6741d-a60e-48ae-b1c9-143829f9468b")
 		)
 		(pin "47"
-			(uuid "935a56df-84d4-49db-855e-593d55487c2c")
+			(uuid "703e5479-5fe9-4b0b-86d6-37dce0f993ae")
 		)
 		(pin "48"
-			(uuid "bf7ca85e-bc4b-4bb7-8cd3-df9a2bdcf4fb")
+			(uuid "183269c7-f992-4e11-b41d-279b5873cce7")
 		)
 		(pin "49"
-			(uuid "deba6c94-b1be-404e-ab80-4d5d25d0dde8")
+			(uuid "0d9320f7-36a6-4676-87af-25dddb679bc4")
 		)
 		(pin "5"
-			(uuid "17d7a3ed-296f-46c0-837d-562bcaecff52")
+			(uuid "9b565475-a5ac-4c8e-a2f2-59b6f83fe692")
 		)
 		(pin "50"
-			(uuid "bfd61fee-07f9-4793-9681-b9d8ebf1413c")
+			(uuid "58763c56-4674-4b3e-8534-5b591bd47ee4")
 		)
 		(pin "52"
-			(uuid "461af355-6f5a-4f9c-96a9-f13d6d323d30")
+			(uuid "e5e045c8-9923-4f72-9191-3e9e152a0762")
 		)
 		(pin "53"
-			(uuid "51ce7c21-6e68-4bb3-97f5-7bdb38cf5641")
+			(uuid "7dbb7e56-a339-4683-b242-ee86a9766a64")
 		)
 		(pin "54"
-			(uuid "5ed06883-4c57-49ab-bd3d-6a5c7de5852f")
+			(uuid "3fb56cf7-98a7-443c-a404-2dcbe69c624e")
 		)
 		(pin "55"
-			(uuid "f46a6695-81c4-486d-b286-c876c2428dc7")
+			(uuid "676831f9-8a64-4c49-b681-53375e10a4a6")
 		)
 		(pin "56"
-			(uuid "01cbfc86-4fd1-4ee8-b8d1-bc2378c594eb")
+			(uuid "ee693f3e-b02b-4659-98d7-3fba92846543")
 		)
 		(pin "57"
-			(uuid "0902409c-a0f5-47d4-8391-d38bfa3c59b5")
+			(uuid "76008697-820c-47bf-bbb5-5a7337264ad8")
 		)
 		(pin "6"
-			(uuid "a56002cd-d4e5-4398-802d-6b83de69abd1")
+			(uuid "345a3f16-2248-4470-a284-059133f65f79")
 		)
 		(pin "7"
-			(uuid "8361155d-68f9-4145-b719-cc4650ce0993")
+			(uuid "ad734a85-05f8-4966-92fa-16279f9d3c95")
 		)
 		(pin "8"
-			(uuid "7b0a639f-b224-4120-995b-ff8f50806ed0")
+			(uuid "1f59c8b2-ba32-41ca-833b-8c2a1cbf947c")
 		)
 		(pin "9"
-			(uuid "701d2ecb-1182-44f5-9409-f4f1d1cb04a6")
+			(uuid "ece41491-3289-4f42-96d8-076762b07bae")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "U3")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "U1005")
 					(unit 1)
 				)
 			)
@@ -10763,11 +10343,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "f3992523-44c3-41e5-b8e9-6903f1e761b6")
+			(uuid "55e95cab-9f99-436c-a2cf-f459fc67e433")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR042")
 					(unit 1)
 				)
@@ -10785,7 +10365,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b1ccaa1")
-		(property "Reference" "D4"
+		(property "Reference" "D1003"
 			(at 190.5 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10885,15 +10465,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "64e62240-1896-4ac4-9bd9-c6d04c7ea6c6")
+			(uuid "58a29857-08ec-4f38-9664-913b40263ade")
 		)
 		(pin "2"
-			(uuid "c96b3666-23a4-4295-8c61-74c48fee909c")
+			(uuid "34605337-803a-44f9-b98f-a899b3b78ee6")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "D4")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "D1003")
 					(unit 1)
 				)
 			)
@@ -10910,7 +10490,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b1ccf4d")
-		(property "Reference" "L2"
+		(property "Reference" "L1002"
 			(at 194.31 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11008,15 +10588,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "57bad49c-905f-40a3-be53-94667e4f70e0")
+			(uuid "f68546db-eab6-4d4e-a914-321bb62fe7e9")
 		)
 		(pin "2"
-			(uuid "44281c6a-7199-4fc6-b691-78611af1fea4")
+			(uuid "3c5f587a-e0ee-4c19-8365-d5ba1511e578")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "L2")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "L1002")
 					(unit 1)
 				)
 			)
@@ -11033,7 +10613,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b1e0094")
-		(property "Reference" "U2"
+		(property "Reference" "U1004"
 			(at 101.6 141.605 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11131,24 +10711,102 @@
 			)
 		)
 		(pin "1"
-			(uuid "04791b08-e146-438f-b101-c63f73944274")
+			(uuid "d1f0091c-7ed1-488d-9f1b-e5f1061bc9c9")
 		)
 		(pin "2"
-			(uuid "c1516810-541c-4f92-be77-07aab62936f8")
+			(uuid "14d3a451-fb8b-4f8f-af91-1914bae332f8")
 		)
 		(pin "3"
-			(uuid "b3483018-31ee-4ecb-8203-efeaa99c791b")
+			(uuid "060c9c56-4ecc-4033-996b-3cf5a9e3ff5b")
 		)
 		(pin "4"
-			(uuid "dc5ae198-001a-4b19-97fc-d410979d9541")
+			(uuid "ed5e4f87-6c62-47b3-ab72-c2bbdf96fc8b")
 		)
 		(pin "5"
-			(uuid "b642e16a-182d-4301-98f4-02e095799c70")
+			(uuid "ef833ce8-400c-46a4-a6c2-d35b7456718e")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "U2")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "U1004")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 200.66 48.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "042c255a-5f8c-42b6-a91c-0324d911b1ef")
+		(property "Reference" "#FLG01004"
+			(at 200.66 46.355 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 200.66 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 200.66 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fded0e60-dc14-4a38-92cf-328f30bd1b6b")
+		)
+		(instances
+			(project "VESC6_OPEN_HARDWARE"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "#FLG01004")
 					(unit 1)
 				)
 			)
@@ -11219,11 +10877,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "b34a1d5b-75f9-4448-b757-dbe239ae305d")
+			(uuid "0440ee19-969a-4cf8-88ee-087df48e4d57")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
 					(reference "#PWR076")
 					(unit 1)
 				)
@@ -11241,7 +10899,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "23a551e5-cb8c-499c-b3c1-38a0a455458c")
-		(property "Reference" "R38"
+		(property "Reference" "R1018"
 			(at 171.45 30.48 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11339,23 +10997,23 @@
 			)
 		)
 		(pin "1"
-			(uuid "703ca666-7d07-4fe7-a781-10056d2ca014")
+			(uuid "8587b4f1-390e-4e7a-9b49-13439ae99e8b")
 		)
 		(pin "2"
-			(uuid "4b5dee0d-a776-4020-b7f5-094dcc3321fd")
+			(uuid "b135acba-f561-44c6-9023-a61ad5464eee")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "R38")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "R1018")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 143.51 151.13 0)
+		(lib_id "power:PWR_FLAG")
+		(at 133.35 144.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11363,31 +11021,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "6becc599-6fcb-4180-a0f0-e394ec7e3c44")
-		(property "Reference" "C21"
-			(at 146.431 149.9616 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100u"
-			(at 146.431 152.273 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
-			(at 144.4752 154.94 0)
+		(fields_autoplaced yes)
+		(uuid "52c22832-3763-4460-b8ab-9f955baa92bc")
+		(property "Reference" "#FLG01003"
+			(at 133.35 142.875 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11397,8 +11034,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2111161030_Kyocera-AVX-TAJB107K006RNJ-_C16133.pdf"
-			(at 143.51 151.13 0)
+		(property "Value" "PWR_FLAG"
+			(at 133.35 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11408,8 +11055,8 @@
 				)
 			)
 		)
-		(property "Description" "CAP 100uF 6.3V 1.7Ω@100kHz ±10% 1210 Tantalum"
-			(at 143.51 151.13 0)
+		(property "Datasheet" ""
+			(at 133.35 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11419,41 +11066,8 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C16133"
-			(at 143.51 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Critical" "N"
-			(at 143.51 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Link" "https://jlcpcb.com/partdetail/KyoceraAvx-TAJB107K006RNJ/C16133"
-			(at 143.51 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MFP" "TAJB107K006RNJ"
-			(at 143.51 151.13 0)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 133.35 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11464,15 +11078,371 @@
 			)
 		)
 		(pin "1"
-			(uuid "9dfddd07-8c88-4b27-9481-e3fa5a9bdcec")
-		)
-		(pin "2"
-			(uuid "90e02e95-bc62-4554-864f-a7a0a5714d7b")
+			(uuid "c712f008-1e6b-4379-96d7-c2063fdc7af0")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005ae1478f"
-					(reference "C21")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "#FLG01003")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 146.05 151.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6becc599-6fcb-4180-a0f0-e394ec7e3c44")
+		(property "Reference" "C1026"
+			(at 148.971 149.9616 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100u"
+			(at 148.971 152.273 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 147.0152 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2111161030_Kyocera-AVX-TAJB107K006RNJ-_C16133.pdf"
+			(at 146.05 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP 100uF 6.3V 1.7Ω@100kHz ±10% 1210 Tantalum"
+			(at 146.05 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC part no." "C16133"
+			(at 146.05 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Critical" "N"
+			(at 146.05 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Link" "https://jlcpcb.com/partdetail/KyoceraAvx-TAJB107K006RNJ/C16133"
+			(at 146.05 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFP" "TAJB107K006RNJ"
+			(at 146.05 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "67754238-7f7a-4383-87ed-7bfef1751506")
+		)
+		(pin "2"
+			(uuid "c68ec770-14a1-4efd-9366-0e28f878e5fb")
+		)
+		(instances
+			(project "VESC6_OPEN_HARDWARE"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "C1026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 203.2 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d30cfd7-0770-49d2-8dcc-5cfb02d37ab8")
+		(property "Reference" "#PWR01023"
+			(at 203.2 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SUPPLY"
+			(at 203.2 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 203.2 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7914d807-c2dd-424d-8d88-af1e31798a2c")
+		)
+		(instances
+			(project "VESC6_OPEN_HARDWARE"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "#PWR01023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 255.27 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b14764d4-9dd0-431c-ac67-64246915cec4")
+		(property "Reference" "#PWR01022"
+			(at 255.27 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SUPPLY"
+			(at 255.27 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 255.27 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6800c789-8ea8-46d4-8fb8-16d705e1da21")
+		)
+		(instances
+			(project "VESC6_OPEN_HARDWARE"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "#PWR01022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 179.07 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef92038b-3068-43a4-b2a1-23e02dfe7d52")
+		(property "Reference" "#PWR01021"
+			(at 179.07 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SUPPLY"
+			(at 179.07 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 179.07 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "666fe1f0-28dd-4302-9d34-c13436f6cae0")
+		)
+		(instances
+			(project "VESC6_OPEN_HARDWARE"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/3292c0c2-8ccf-4146-84ea-3fc83d284a85"
+					(reference "#PWR01021")
 					(unit 1)
 				)
 			)

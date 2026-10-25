@@ -571,142 +571,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
-			(power global)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "power-flag"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(hide yes)
-					(name "+5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_names
@@ -802,142 +666,6 @@
 					(length 0)
 					(hide yes)
 					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:VCC"
-			(power global)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "VCC"
-				(at 0 3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "power-flag"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VCC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(hide yes)
-					(name "VCC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1116,7 +844,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 85.09) (xy 166.37 73.66)
+			(xy 166.37 72.39) (xy 166.37 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1324,6 +1052,26 @@
 		)
 		(uuid "fb35e3b1-aff6-41a7-9cf0-52694b95edeb")
 	)
+	(label "+5V"
+		(at 116.84 73.66 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3454e0b3-5eca-42e0-bf48-fe98c2b51f53")
+	)
+	(label "+3V3"
+		(at 166.37 72.39 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "acd1d5ef-360b-41b4-a616-2c35e2847e19")
+	)
 	(hierarchical_label "RX"
 		(shape input)
 		(at 134.62 85.09 180)
@@ -1346,6 +1094,17 @@
 		)
 		(uuid "26bc8641-9bca-4204-9709-deedbe202a36")
 	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 116.84 73.66 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6e68f354-e6b0-412e-af57-331b2f41450a")
+	)
 	(hierarchical_label "TX"
 		(shape input)
 		(at 134.62 77.47 180)
@@ -1356,6 +1115,17 @@
 			(justify right)
 		)
 		(uuid "86e98417-f5e4-48ba-8147-ef66cc03dde6")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 166.37 72.39 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a0298ca8-14ad-4bda-b7bc-1cbe8e152547")
 	)
 	(hierarchical_label "CANL"
 		(shape input)
@@ -1379,7 +1149,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005aeac294")
-		(property "Reference" "C33"
+		(property "Reference" "C1004"
 			(at 118.11 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1479,15 +1249,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "3e98ab3b-a525-405f-b3d5-a509a1c348ca")
+			(uuid "a01e8ca6-163f-4a33-b2c3-4cb3f1faca33")
 		)
 		(pin "2"
-			(uuid "c245acfe-412b-44ce-96b8-f0be9d67d38d")
+			(uuid "be007677-e079-4fae-9f18-1f4435105803")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005aeaa308"
-					(reference "C33")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/b2b9706e-bd8f-4858-b41c-0ad60782e278"
+					(reference "C1004")
 					(unit 1)
 				)
 			)
@@ -1504,7 +1274,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005aeac2cc")
-		(property "Reference" "C34"
+		(property "Reference" "C1005"
 			(at 168.91 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1604,15 +1374,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "ca78a5ec-0e07-4783-bca2-901a9623239b")
+			(uuid "9347220e-8830-422b-8d05-eade30285734")
 		)
 		(pin "2"
-			(uuid "fba03eb2-e33e-4ff7-8bac-112d00f7de03")
+			(uuid "a2e7ba88-08a7-4171-9d78-75edda2c0b44")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005aeaa308"
-					(reference "C34")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/b2b9706e-bd8f-4858-b41c-0ad60782e278"
+					(reference "C1005")
 					(unit 1)
 				)
 			)
@@ -1629,7 +1399,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005aeac462")
-		(property "Reference" "R23"
+		(property "Reference" "R1012"
 			(at 181.61 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1729,15 +1499,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "a433789b-a541-4f8a-9599-b776d735d765")
+			(uuid "ece59315-b82c-476a-946d-5423b1a89944")
 		)
 		(pin "2"
-			(uuid "85fa5704-8fd8-4f8a-b4a7-049227a2e39f")
+			(uuid "c5c5da97-dd48-4924-8ad6-20debd3fc719")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005aeaa308"
-					(reference "R23")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/b2b9706e-bd8f-4858-b41c-0ad60782e278"
+					(reference "R1012")
 					(unit 1)
 				)
 			)
@@ -1754,7 +1524,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b1ec10a")
-		(property "Reference" "U4"
+		(property "Reference" "U1002"
 			(at 145.415 70.739 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1853,188 +1623,36 @@
 			)
 		)
 		(pin "1"
-			(uuid "3ead0b98-6b7d-496b-a1be-677dfd788c22")
+			(uuid "8089aa22-9407-4650-a0a1-267675216a7d")
 		)
 		(pin "2"
-			(uuid "4d05a709-fa0b-4f59-87d6-3583d874dc09")
+			(uuid "6f1905c5-4307-401a-9e96-a3c002f3a5ab")
 		)
 		(pin "3"
-			(uuid "bdbc09ac-56d6-4fed-8536-b1fc98e1f464")
+			(uuid "430dbd9b-4cea-461d-b2df-1b8aa6461f71")
 		)
 		(pin "4"
-			(uuid "64e854bd-d82a-4a95-bb38-711d0fe0a5bf")
+			(uuid "6270ba17-f101-453e-b394-fd2a55d823d7")
 		)
 		(pin "5"
-			(uuid "c71b4620-6d79-41dc-a389-067acc953d54")
+			(uuid "e96c760a-ab25-45ba-b4ba-6af05de78359")
 		)
 		(pin "6"
-			(uuid "e02820d9-8ec2-44a1-a266-d614c0cd8c97")
+			(uuid "631d230d-0a32-49ed-a8d8-a4c561572cee")
 		)
 		(pin "7"
-			(uuid "92ce59e9-1919-48f3-9c29-aa1540dde63a")
+			(uuid "2a12dcdf-57a2-4ce7-b308-07107543dd64")
 		)
 		(pin "8"
-			(uuid "94cef7bd-ca5e-461b-a0fe-c6e185df2388")
+			(uuid "92bdee42-0bb5-4c24-98bd-19f53f72aa05")
 		)
 		(pin "9"
-			(uuid "73611170-5092-4c04-a0ff-0cae61e9e483")
+			(uuid "d89c4f36-0175-4ccf-9451-b325339226df")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005aeaa308"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 116.84 73.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005b1eca5a")
-		(property "Reference" "#PWR072"
-			(at 116.84 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5VA"
-			(at 117.221 69.2658 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 116.84 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 116.84 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 116.84 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e58711cd-8ef7-434d-8c5a-5bdd7a322f8f")
-		)
-		(instances
-			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005aeaa308"
-					(reference "#PWR072")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 166.37 73.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005b1ece4f")
-		(property "Reference" "#PWR073"
-			(at 166.37 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3a"
-			(at 166.8018 69.2658 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 166.37 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 166.37 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 166.37 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3a30f2b0-61bd-4535-a567-0a950f9ca3ff")
-		)
-		(instances
-			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005aeaa308"
-					(reference "#PWR073")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/b2b9706e-bd8f-4858-b41c-0ad60782e278"
+					(reference "U1002")
 					(unit 1)
 				)
 			)
@@ -2105,11 +1723,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "78746421-c7c0-4cfd-9968-7ad362a3becb")
+			(uuid "df3a1af4-d283-47cb-b7e4-30a5579fd10c")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/00000000-0000-0000-0000-00005aeaa308"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/b2b9706e-bd8f-4858-b41c-0ad60782e278"
 					(reference "#PWR074")
 					(unit 1)
 				)

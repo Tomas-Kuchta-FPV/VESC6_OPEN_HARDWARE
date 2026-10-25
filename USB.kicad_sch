@@ -1574,7 +1574,7 @@
 		(uuid "35e35254-54a0-4dab-9a0b-3f9495ac17a8")
 	)
 	(junction
-		(at 147.32 110.49)
+		(at 147.32 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7f057d80-9a06-4a87-8b59-8a80357077bd")
@@ -1627,7 +1627,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 110.49) (xy 144.78 107.95)
+			(xy 144.78 114.3) (xy 144.78 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1697,7 +1697,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 110.49) (xy 147.32 113.03)
+			(xy 147.32 114.3) (xy 147.32 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1737,7 +1737,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 77.47) (xy 149.86 100.33)
+			(xy 149.86 77.47) (xy 149.86 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1757,7 +1757,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 110.49) (xy 144.78 110.49)
+			(xy 147.32 114.3) (xy 144.78 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1787,7 +1787,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 107.95) (xy 149.86 110.49)
+			(xy 149.86 111.76) (xy 149.86 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1797,7 +1797,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 110.49) (xy 149.86 110.49)
+			(xy 147.32 114.3) (xy 149.86 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1897,7 +1897,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 100.33) (xy 144.78 80.01)
+			(xy 144.78 104.14) (xy 144.78 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2065,18 +2065,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "3611b781-34b7-469f-a79a-04452b298b8a")
+			(uuid "82156b37-36b3-4815-825b-674ab07773b2")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/4c5fe8a6-8c75-4d28-a0d1-00076ab3fe22"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/a8cef6d1-1c80-4870-a6aa-c1368869a3a7"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-			(project "UBS-C_TYPE-C-31-M-12"
-				(path "/d915b4b4-54fd-4193-8810-936621a064e8"
-					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -2094,7 +2088,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a98e404-ec14-489d-9dee-39082d65da7c")
-		(property "Reference" "U8"
+		(property "Reference" "U1006"
 			(at 165.4811 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2164,33 +2158,27 @@
 			)
 		)
 		(pin "6"
-			(uuid "94dee342-90bc-45a2-a066-278c4d4da871")
+			(uuid "1482aadd-a3eb-4497-ab41-75e3889ba884")
 		)
 		(pin "1"
-			(uuid "7ea36950-cd21-4476-aa68-6036e980eef3")
+			(uuid "34eecb62-1888-43a7-a615-7bf41e7793c6")
 		)
 		(pin "4"
-			(uuid "9039800a-b73e-4ddd-8b07-ed17792407d2")
+			(uuid "77761346-3c62-4814-968d-9236a19f1565")
 		)
 		(pin "2"
-			(uuid "fa9c6bcf-e8fe-4281-aea6-d44c44952406")
+			(uuid "3df206b8-c86b-43fb-aa1f-3e6a29c0f065")
 		)
 		(pin "3"
-			(uuid "317d3af7-f29e-41fc-901b-b78028dcf252")
+			(uuid "907fb55c-0283-4c65-a347-dc194e309b3f")
 		)
 		(pin "5"
-			(uuid "b52b8994-5782-4b49-9e46-5bdff20f66ea")
+			(uuid "a2d2441c-069b-4e86-a208-db17128157d9")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/4c5fe8a6-8c75-4d28-a0d1-00076ab3fe22"
-					(reference "U8")
-					(unit 1)
-				)
-			)
-			(project "UBS-C_TYPE-C-31-M-12"
-				(path "/d915b4b4-54fd-4193-8810-936621a064e8"
-					(reference "U1")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/a8cef6d1-1c80-4870-a6aa-c1368869a3a7"
+					(reference "U1006")
 					(unit 1)
 				)
 			)
@@ -2263,17 +2251,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "a884f70c-b6e2-45c4-8bfb-4b7a90067032")
+			(uuid "e90f9e22-0aa0-4488-8fbf-847bed90f4c3")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/4c5fe8a6-8c75-4d28-a0d1-00076ab3fe22"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-			(project "UBS-C_TYPE-C-31-M-12"
-				(path "/d915b4b4-54fd-4193-8810-936621a064e8"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/a8cef6d1-1c80-4870-a6aa-c1368869a3a7"
 					(reference "#FLG01")
 					(unit 1)
 				)
@@ -2282,7 +2264,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 149.86 104.14 0)
+		(at 149.86 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2291,8 +2273,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "59748eaa-484d-4fab-99c0-c984577fb1b5")
-		(property "Reference" "R5"
-			(at 152.4 102.8699 0)
+		(property "Reference" "R1028"
+			(at 152.4 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2303,7 +2285,7 @@
 			)
 		)
 		(property "Value" "5k1"
-			(at 152.4 105.4099 0)
+			(at 152.4 109.2199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2314,7 +2296,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 148.082 104.14 90)
+			(at 148.082 107.95 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2325,7 +2307,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 104.14 0)
+			(at 149.86 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2336,7 +2318,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 149.86 104.14 0)
+			(at 149.86 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2347,7 +2329,7 @@
 			)
 		)
 		(property "LCSC" "C84375"
-			(at 149.86 104.14 0)
+			(at 149.86 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2358,21 +2340,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "b9d12b7d-1396-406a-90e3-74ef1e619730")
+			(uuid "288efec1-692a-4078-ad7b-1ecdc712aaa7")
 		)
 		(pin "2"
-			(uuid "8c744dbc-6de1-4727-bd96-3af1ba316b7f")
+			(uuid "dcd896a7-333d-4c8f-86c2-54c272ad069c")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/4c5fe8a6-8c75-4d28-a0d1-00076ab3fe22"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-			(project "UBS-C_TYPE-C-31-M-12"
-				(path "/d915b4b4-54fd-4193-8810-936621a064e8"
-					(reference "R4")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/a8cef6d1-1c80-4870-a6aa-c1368869a3a7"
+					(reference "R1028")
 					(unit 1)
 				)
 			)
@@ -2391,7 +2367,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d73368a9-e602-4b78-a616-ba44ea1471b6")
-		(property "Reference" "J1"
+		(property "Reference" "J1001"
 			(at 121.92 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2456,66 +2432,60 @@
 			)
 		)
 		(pin "A5"
-			(uuid "086aeacc-d5c6-42c4-9f8c-864393a19c00")
+			(uuid "66b9a023-1aba-4750-bc05-57046f9d19d2")
 		)
 		(pin "B4"
-			(uuid "fdbed722-e386-4b80-9307-b47ea2c9c47e")
+			(uuid "c367eb2c-dd7e-415e-a33d-85d1f8bbed09")
 		)
 		(pin "A8"
-			(uuid "f2979286-a4f3-49ca-93cd-92cd73de9a63")
+			(uuid "610b9263-3397-4309-9a9b-06e46e36250a")
 		)
 		(pin "A6"
-			(uuid "4eeb3b4a-989c-476f-926e-58c0fbb75412")
+			(uuid "6892056d-958f-4463-836b-2777a2a852e6")
 		)
 		(pin "A12"
-			(uuid "6544d147-f1d0-489f-95bc-53220051ad25")
+			(uuid "a6cf81d0-7645-44af-8c9e-c5471a04f676")
 		)
 		(pin "A7"
-			(uuid "b7b75cc8-3625-402f-868f-39fed04e4f53")
+			(uuid "7ea8f157-48be-4af2-a1ba-d36d33dc9de5")
 		)
 		(pin "A9"
-			(uuid "11c25ee8-c413-46d8-a645-bd49ddf7676c")
+			(uuid "620d75b5-890a-47ae-9780-6fcf4196dc8a")
 		)
 		(pin "B5"
-			(uuid "3bfa5111-6f2f-4690-8952-69f0830649ab")
+			(uuid "6c2fa2fe-91c9-4991-ae01-576d8e5d8ed8")
 		)
 		(pin "B1"
-			(uuid "4a8da00a-2612-4134-8f04-c405ef9b0eb4")
+			(uuid "08c10d28-fb48-437d-adb5-8059c0dbbd99")
 		)
 		(pin "A1"
-			(uuid "12250503-43e4-4664-a69b-58492c3bbd30")
+			(uuid "f508153e-f829-40b4-8e36-81c483d70348")
 		)
 		(pin "A4"
-			(uuid "8a5748dc-f661-4661-b61b-5f9fb5db62ec")
+			(uuid "aeb7fe91-acaa-4df4-a9e9-396c99fd9ba9")
 		)
 		(pin "SH"
-			(uuid "52416351-da30-4a65-9c34-40b18393052c")
+			(uuid "3d4ed7f1-e17c-4ba0-ac1a-345eaf4e267a")
 		)
 		(pin "B7"
-			(uuid "2fc44440-48a7-46c3-8ca3-644e5a167629")
+			(uuid "23529981-eafc-46b9-a3c7-0fac6a06456c")
 		)
 		(pin "B8"
-			(uuid "1e002b01-6b3a-4262-b73e-16f6c8854593")
+			(uuid "0a972311-c4a4-4b98-8538-3d6d36a7eb9d")
 		)
 		(pin "B12"
-			(uuid "9224c525-8f42-46ca-95cb-a2ce123f3d3e")
+			(uuid "f7b18de4-f9c4-4c52-8a92-77e100e7fa61")
 		)
 		(pin "B9"
-			(uuid "172cd945-7399-4262-94d7-1ad689b573e0")
+			(uuid "bec9354c-083b-4316-88d7-6360ebcee9a6")
 		)
 		(pin "B6"
-			(uuid "e98241f8-bd32-4cb7-a22a-c800ea1d1290")
+			(uuid "b0d0ac6a-7598-401b-b1f6-c450413de83e")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/4c5fe8a6-8c75-4d28-a0d1-00076ab3fe22"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-			(project "UBS-C_TYPE-C-31-M-12"
-				(path "/d915b4b4-54fd-4193-8810-936621a064e8"
-					(reference "J1")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/a8cef6d1-1c80-4870-a6aa-c1368869a3a7"
+					(reference "J1001")
 					(unit 1)
 				)
 			)
@@ -2523,7 +2493,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 147.32 113.03 0)
+		(at 147.32 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2534,7 +2504,7 @@
 		(fields_autoplaced yes)
 		(uuid "dae7cbd5-4a17-41bf-9c80-d2c4bc7ffa0d")
 		(property "Reference" "#PWR03"
-			(at 147.32 119.38 0)
+			(at 147.32 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2545,7 +2515,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 147.32 118.11 0)
+			(at 147.32 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2555,7 +2525,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 113.03 0)
+			(at 147.32 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2566,7 +2536,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 113.03 0)
+			(at 147.32 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2577,7 +2547,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 147.32 113.03 0)
+			(at 147.32 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2588,18 +2558,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "cf214d7c-0b35-4d29-8058-60f04102a988")
+			(uuid "da70a800-f326-4718-8abe-756d9c38f1a4")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/4c5fe8a6-8c75-4d28-a0d1-00076ab3fe22"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/a8cef6d1-1c80-4870-a6aa-c1368869a3a7"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-			(project "UBS-C_TYPE-C-31-M-12"
-				(path "/d915b4b4-54fd-4193-8810-936621a064e8"
-					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -2672,18 +2636,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "f65d7ac5-d278-43ac-8f51-a1816c5726dd")
+			(uuid "8e904f60-c817-48d5-8b9d-4e0063b986aa")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/4c5fe8a6-8c75-4d28-a0d1-00076ab3fe22"
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/a8cef6d1-1c80-4870-a6aa-c1368869a3a7"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-			(project "UBS-C_TYPE-C-31-M-12"
-				(path "/d915b4b4-54fd-4193-8810-936621a064e8"
-					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -2691,7 +2649,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 144.78 104.14 0)
+		(at 144.78 107.95 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -2701,8 +2659,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ef270ff7-58dc-4952-a803-c776ba8f88c1")
-		(property "Reference" "R4"
-			(at 142.24 102.8699 0)
+		(property "Reference" "R1027"
+			(at 142.24 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2713,7 +2671,7 @@
 			)
 		)
 		(property "Value" "5k1"
-			(at 142.24 105.4099 0)
+			(at 142.24 109.2199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2724,7 +2682,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 146.558 104.14 90)
+			(at 146.558 107.95 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2735,7 +2693,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 104.14 0)
+			(at 144.78 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2746,7 +2704,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 144.78 104.14 0)
+			(at 144.78 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2757,7 +2715,7 @@
 			)
 		)
 		(property "LCSC" "C84375"
-			(at 144.78 104.14 0)
+			(at 144.78 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2768,21 +2726,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "68c92d57-a6ed-42c1-9e1b-da26193921f6")
+			(uuid "83524293-0a38-4c25-84e7-cbcbec76624f")
 		)
 		(pin "2"
-			(uuid "9dd7b2e6-898d-4a17-b182-9c5c562ffc90")
+			(uuid "96dc6d43-905a-4f20-bc0d-65c2caaea5af")
 		)
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/4c5fe8a6-8c75-4d28-a0d1-00076ab3fe22"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-			(project "UBS-C_TYPE-C-31-M-12"
-				(path "/d915b4b4-54fd-4193-8810-936621a064e8"
-					(reference "R5")
+				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/1e81ec4a-7813-42c9-8244-ecd5bd9e7dba/a8cef6d1-1c80-4870-a6aa-c1368869a3a7"
+					(reference "R1027")
 					(unit 1)
 				)
 			)
