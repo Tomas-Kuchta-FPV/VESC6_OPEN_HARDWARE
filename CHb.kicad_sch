@@ -3519,7 +3519,7 @@
 				)
 			)
 		)
-		(property "Value" "+3V3a"
+		(property "Value" "+3V3b"
 			(at 99.06 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4216,7 +4216,7 @@
 				)
 			)
 		)
-		(property "Value" "+5Va"
+		(property "Value" "+5Vb"
 			(at 62.9412 66.421 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4293,7 +4293,7 @@
 				)
 			)
 		)
-		(property "Value" "+3V3a"
+		(property "Value" "+3V3b"
 			(at 149.0218 28.6258 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4547,7 +4547,7 @@
 				)
 			)
 		)
-		(property "Value" "+5Va"
+		(property "Value" "+5Vb"
 			(at 89.281 48.9458 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5229,7 +5229,7 @@
 				)
 			)
 		)
-		(property "Value" "+3V3a"
+		(property "Value" "+3V3b"
 			(at 196.0118 28.6258 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5305,7 +5305,7 @@
 				)
 			)
 		)
-		(property "Value" "+5Va"
+		(property "Value" "+5Vb"
 			(at 130.1242 27.051 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5505,7 +5505,7 @@
 				)
 			)
 		)
-		(property "Value" "+5Va"
+		(property "Value" "+5Vb"
 			(at 65.4812 160.401 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5582,7 +5582,7 @@
 				)
 			)
 		)
-		(property "Value" "+3V3a"
+		(property "Value" "+3V3b"
 			(at 81.7118 48.9458 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5736,7 +5736,7 @@
 				)
 			)
 		)
-		(property "Value" "+5Va"
+		(property "Value" "+5Vb"
 			(at 202.311 28.6258 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6093,7 +6093,7 @@
 				)
 			)
 		)
-		(property "Value" "+3V3a"
+		(property "Value" "+3V3b"
 			(at 87.63 127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6169,7 +6169,7 @@
 				)
 			)
 		)
-		(property "Value" "+5Va"
+		(property "Value" "+5Vb"
 			(at 37.211 89.5858 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6245,7 +6245,7 @@
 				)
 			)
 		)
-		(property "Value" "+3V3a"
+		(property "Value" "+3V3b"
 			(at 241.7318 28.6258 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6321,7 +6321,7 @@
 				)
 			)
 		)
-		(property "Value" "+3V3a"
+		(property "Value" "+3V3b"
 			(at 73.1012 147.7518 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7423,7 +7423,7 @@
 				)
 			)
 		)
-		(property "Value" "+5Va"
+		(property "Value" "+5Vb"
 			(at 94.361 23.5458 0)
 			(show_name no)
 			(do_not_autoplace no)
