@@ -112,7 +112,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 109.22 113.03 0)
+		(at 143.51 105.41 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -122,8 +122,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5aa234c5-c072-4a11-82c1-37c755d02e2d")
-		(property "Reference" "H1001"
-			(at 111.76 111.7599 0)
+		(property "Reference" "H101"
+			(at 146.05 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -134,7 +134,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 111.76 114.2999 0)
+			(at 146.05 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -145,7 +145,7 @@
 			)
 		)
 		(property "Footprint" "CustomFootprints:MountingHole_3mm"
-			(at 109.22 113.03 0)
+			(at 143.51 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -156,7 +156,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 113.03 0)
+			(at 143.51 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -167,7 +167,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 109.22 113.03 0)
+			(at 143.51 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -180,7 +180,7 @@
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
 				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079"
-					(reference "H1001")
+					(reference "H101")
 					(unit 1)
 				)
 			)
@@ -188,7 +188,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 109.22 119.38 0)
+		(at 143.51 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -198,8 +198,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8682bd82-dbf4-40de-86d3-a4b9a1427e74")
-		(property "Reference" "H1002"
-			(at 111.76 118.1099 0)
+		(property "Reference" "H102"
+			(at 146.05 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -210,7 +210,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 111.76 120.6499 0)
+			(at 146.05 113.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -221,7 +221,7 @@
 			)
 		)
 		(property "Footprint" "CustomFootprints:MountingHole_3mm"
-			(at 109.22 119.38 0)
+			(at 143.51 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -232,7 +232,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 119.38 0)
+			(at 143.51 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -243,7 +243,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 109.22 119.38 0)
+			(at 143.51 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -256,7 +256,7 @@
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
 				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079"
-					(reference "H1002")
+					(reference "H102")
 					(unit 1)
 				)
 			)
@@ -264,7 +264,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 109.22 132.08 0)
+		(at 143.51 124.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -274,8 +274,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a19670a0-52fb-4610-bc57-f2983f8834f7")
-		(property "Reference" "H1004"
-			(at 111.76 130.8099 0)
+		(property "Reference" "H104"
+			(at 146.05 123.1899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -286,7 +286,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 111.76 133.3499 0)
+			(at 146.05 125.7299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -297,7 +297,7 @@
 			)
 		)
 		(property "Footprint" "CustomFootprints:MountingHole_3mm"
-			(at 109.22 132.08 0)
+			(at 143.51 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -308,7 +308,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 132.08 0)
+			(at 143.51 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -319,7 +319,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 109.22 132.08 0)
+			(at 143.51 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -332,7 +332,7 @@
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
 				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079"
-					(reference "H1004")
+					(reference "H104")
 					(unit 1)
 				)
 			)
@@ -340,7 +340,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 109.22 125.73 0)
+		(at 143.51 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -350,8 +350,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c1396b82-493c-42d7-8855-3c0a3fdb8dd2")
-		(property "Reference" "H1003"
-			(at 111.76 124.4599 0)
+		(property "Reference" "H103"
+			(at 146.05 116.8399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -362,7 +362,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 111.76 126.9999 0)
+			(at 146.05 119.3799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -373,7 +373,7 @@
 			)
 		)
 		(property "Footprint" "CustomFootprints:MountingHole_3mm"
-			(at 109.22 125.73 0)
+			(at 143.51 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -384,7 +384,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 125.73 0)
+			(at 143.51 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -395,7 +395,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 109.22 125.73 0)
+			(at 143.51 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -408,15 +408,15 @@
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
 				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079"
-					(reference "H1003")
+					(reference "H103")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(sheet
-		(at 118.11 55.88)
-		(size 38.1 25.4)
+		(at 82.55 41.91)
+		(size 53.34 34.29)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -431,7 +431,7 @@
 		)
 		(uuid "1e81ec4a-7813-42c9-8244-ecd5bd9e7dba")
 		(property "Sheetname" "CHa"
-			(at 118.11 55.1684 0)
+			(at 82.55 41.1984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -442,7 +442,7 @@
 			)
 		)
 		(property "Sheetfile" "CHa.kicad_sch"
-			(at 118.11 81.8646 0)
+			(at 82.55 76.7846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -455,13 +455,13 @@
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
 				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079"
-					(page "9")
+					(page "3")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 76.2 55.88)
+		(at 109.22 101.6)
 		(size 29.21 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -477,7 +477,7 @@
 		)
 		(uuid "bb515b26-eb2d-4e36-ac67-211043564e95")
 		(property "Sheetname" "Power"
-			(at 76.2 55.1684 0)
+			(at 109.22 100.8884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -488,7 +488,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 76.2 81.8646 0)
+			(at 109.22 127.5846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -501,14 +501,14 @@
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
 				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079"
-					(page "8")
+					(page "2")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 161.29 55.88)
-		(size 40.64 25.4)
+		(at 143.51 41.91)
+		(size 53.34 34.29)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -523,7 +523,7 @@
 		)
 		(uuid "cc03c9bc-7d6e-4340-8742-d977d081ffa4")
 		(property "Sheetname" "CHb"
-			(at 161.29 55.1684 0)
+			(at 143.51 41.1984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -534,7 +534,7 @@
 			)
 		)
 		(property "Sheetfile" "CHb.kicad_sch"
-			(at 161.29 81.8646 0)
+			(at 143.51 76.7846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -547,7 +547,7 @@
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
 				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079"
-					(page "10")
+					(page "4")
 				)
 			)
 		)
