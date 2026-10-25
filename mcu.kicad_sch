@@ -6000,7 +6000,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3V3a"
 			(at 185.8518 87.0458 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6152,7 +6152,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3V3a"
 			(at 187.96 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6228,7 +6228,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3V3a"
 			(at 195.58 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7807,7 +7807,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3V3a"
 			(at 246.8118 38.7858 0)
 			(show_name no)
 			(do_not_autoplace no)

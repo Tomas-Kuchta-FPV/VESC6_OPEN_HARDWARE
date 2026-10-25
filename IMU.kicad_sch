@@ -1648,7 +1648,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3V3a"
 			(at 165.1 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2210,7 +2210,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3V3a"
 			(at 124.46 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)

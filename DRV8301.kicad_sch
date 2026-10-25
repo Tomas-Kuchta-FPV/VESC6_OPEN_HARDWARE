@@ -5415,7 +5415,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "+5VA"
 			(at 81.661 34.9758 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7486,7 +7486,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "+5VA"
 			(at 209.931 43.8658 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7915,7 +7915,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3V3a"
 			(at 169.3418 51.4858 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7991,7 +7991,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "+5VA"
 			(at 248.031 26.0858 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10079,7 +10079,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3V3a"
 			(at 129.9718 136.5758 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10280,7 +10280,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "+5VA"
 			(at 84.201 137.8458 0)
 			(show_name no)
 			(do_not_autoplace no)
