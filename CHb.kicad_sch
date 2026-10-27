@@ -2243,18 +2243,6 @@
 		(uuid "0fa42d5e-5c60-4747-a2cc-81716f202bd2")
 	)
 	(junction
-		(at 54.61 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "12f1d10b-5de0-4320-9740-62e8e5d54d67")
-	)
-	(junction
-		(at 54.61 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2f78adc2-b42d-4aa1-b2ee-05bc20a43e58")
-	)
-	(junction
 		(at 45.72 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2734,7 +2722,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 60.96) (xy 71.12 60.96)
+			(xy 45.72 60.96) (xy 71.12 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2791,16 +2779,6 @@
 			(type default)
 		)
 		(uuid "785390fc-cc31-4723-9ee3-583de1af2d62")
-	)
-	(wire
-		(pts
-			(xy 35.56 66.04) (xy 54.61 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78f702b9-82f7-474d-84ad-1f56e8c55d7c")
 	)
 	(wire
 		(pts
@@ -3194,7 +3172,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 58.42) (xy 67.31 58.42)
+			(xy 45.72 58.42) (xy 67.31 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3284,16 +3262,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 63.5) (xy 54.61 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f47e4a56-0c5a-457d-a673-ae7abcd974ec")
-	)
-	(wire
-		(pts
 			(xy 78.74 106.68) (xy 78.74 97.79)
 		)
 		(stroke
@@ -3352,6 +3320,28 @@
 		)
 		(uuid "fe7a9482-b97c-489c-895c-5a311a66c991")
 	)
+	(hierarchical_label "CANH"
+		(shape bidirectional)
+		(at 45.72 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "529ec445-4fc3-4b4b-9265-be707a3bb1dd")
+	)
+	(hierarchical_label "CANL"
+		(shape bidirectional)
+		(at 45.72 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6d2955cd-5944-4f70-b28d-5da18926bfdc")
+	)
 	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_01x04_MountingPin")
 		(at 119.38 21.59 0)
@@ -3385,7 +3375,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical"
 			(at 119.38 21.59 0)
 			(hide yes)
 			(show_name no)
@@ -3418,7 +3408,7 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C23390337"
+		(property "LCSC part no." "C160390"
 			(at 119.38 21.59 0)
 			(hide yes)
 			(show_name no)
@@ -3709,7 +3699,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0d728eea-e630-4cf8-a426-4b04b74984f8")
-		(property "Reference" "P402"
+		(property "Reference" "P401"
 			(at 49.53 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3720,7 +3710,7 @@
 			)
 		)
 		(property "Value" "CAN 1"
-			(at 48.26 68.58 0)
+			(at 47.752 67.818 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3730,7 +3720,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical"
 			(at 49.53 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3763,7 +3753,7 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C23390337"
+		(property "LCSC part no." "C160390"
 			(at 49.53 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3836,7 +3826,7 @@
 		(instances
 			(project "VESC6_OPEN_HARDWARE"
 				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/cc03c9bc-7d6e-4340-8742-d977d081ffa4"
-					(reference "P402")
+					(reference "P401")
 					(unit 1)
 				)
 			)
@@ -5993,85 +5983,6 @@
 		)
 	)
 	(symbol
-		(lib_name "GND_2")
-		(lib_id "power:GND")
-		(at 30.48 71.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "902d415c-f386-466e-8cc4-07555f3f3aba")
-		(property "Reference" "#PWR0401"
-			(at 30.48 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 30.48 76.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 30.48 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 30.48 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 30.48 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "744bd2dd-75e3-4a71-b084-aec014549c88")
-		)
-		(instances
-			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/cc03c9bc-7d6e-4340-8742-d977d081ffa4"
-					(reference "#PWR0401")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
 		(at 87.63 130.81 0)
 		(unit 1)
@@ -6610,7 +6521,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical"
 			(at 57.15 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -6643,7 +6554,7 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C160405"
+		(property "LCSC part no." "C160392"
 			(at 57.15 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -6925,151 +6836,6 @@
 			(project "VESC6_OPEN_HARDWARE"
 				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/cc03c9bc-7d6e-4340-8742-d977d081ffa4"
 					(reference "D401")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic_MountingPin:Conn_01x04_MountingPin")
-		(at 30.48 60.96 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ebc8d0d5-1ba2-4623-b0af-1ba774e7a524")
-		(property "Reference" "P401"
-			(at 30.48 55.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CAN 2"
-			(at 29.21 68.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal"
-			(at 30.48 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 30.48 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 30.48 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC part no." "C23390337"
-			(at 30.48 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Critical" "Y"
-			(at 30.48 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Link" ""
-			(at 30.48 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MFP" ""
-			(at 30.48 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Function" "CAN 2"
-			(at 30.48 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5e38276c-696f-42d5-9cde-d7b93dacb289")
-		)
-		(pin "2"
-			(uuid "a6184c1f-61a8-46a5-b755-aa1092be853a")
-		)
-		(pin "3"
-			(uuid "890ce334-3e68-4d73-b37d-7c31019f7e39")
-		)
-		(pin "4"
-			(uuid "884ff108-4939-4fb9-8668-766e292d7792")
-		)
-		(pin "MP"
-			(uuid "c209fbef-926c-4d13-ae16-1a1e4919cc18")
-		)
-		(instances
-			(project "VESC6_OPEN_HARDWARE"
-				(path "/8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079/cc03c9bc-7d6e-4340-8742-d977d081ffa4"
-					(reference "P401")
 					(unit 1)
 				)
 			)

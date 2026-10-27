@@ -2134,6 +2134,18 @@
 		(uuid "11911dca-f714-4286-9b0f-e8ddc021a6c8")
 	)
 	(junction
+		(at 35.56 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c1ec391-3742-4eda-8289-43095c9ce139")
+	)
+	(junction
+		(at 35.56 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "30f5a001-5c97-4603-8aea-4af1ab7e8263")
+	)
+	(junction
 		(at 81.28 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2729,6 +2741,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 60.96) (xy 35.56 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "835b1c87-10c0-4dfe-ac39-b053f423127f")
+	)
+	(wire
+		(pts
 			(xy 162.56 48.26) (xy 177.8 48.26)
 		)
 		(stroke
@@ -3129,6 +3151,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 58.42) (xy 35.56 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e33254a8-a6ed-4384-bf57-c1afd6263ec7")
+	)
+	(wire
+		(pts
 			(xy 100.33 137.16) (xy 106.68 137.16)
 		)
 		(stroke
@@ -3236,6 +3268,48 @@
 			(type default)
 		)
 		(uuid "fca68927-f424-44ae-8894-bb55a1691d91")
+	)
+	(label "CANL"
+		(at 54.61 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8da61910-ab1c-4add-9e0d-5faa0e78d955")
+	)
+	(label "CANH"
+		(at 54.61 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fe6d97ea-4ddf-4383-b6b1-13341d6b5e7e")
+	)
+	(hierarchical_label "CANL"
+		(shape bidirectional)
+		(at 26.67 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "08de10b1-badd-4492-9f6c-8e1ab797dd5d")
+	)
+	(hierarchical_label "CANH"
+		(shape bidirectional)
+		(at 26.67 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5c186b84-43db-4c51-8d97-af14674f32d7")
 	)
 	(symbol
 		(lib_id "power:+5V")
@@ -6012,7 +6086,7 @@
 			)
 		)
 		(property "Value" "CAN 1"
-			(at 48.26 68.58 0)
+			(at 47.752 67.818 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6055,7 +6129,7 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C23390337"
+		(property "LCSC part no." "C160404"
 			(at 49.53 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -6940,7 +7014,7 @@
 			)
 		)
 		(property "Value" "CAN 2"
-			(at 29.21 68.58 0)
+			(at 28.702 68.072 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6983,7 +7057,7 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C23390337"
+		(property "LCSC part no." "C160404"
 			(at 30.48 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -7206,7 +7280,7 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C23390337"
+		(property "LCSC part no." "C160404"
 			(at 119.38 21.59 0)
 			(hide yes)
 			(show_name no)
