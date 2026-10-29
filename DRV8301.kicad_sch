@@ -6675,17 +6675,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C22961"
-			(at 115.57 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 115.57 27.94 0)
 			(hide yes)
@@ -6710,6 +6699,17 @@
 		)
 		(property "MFP" "0603WAF2203T5E"
 			(at 115.57 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22961"
+			(at 115.57 27.94 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6803,17 +6803,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C25810"
-			(at 91.44 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 91.44 36.83 0)
 			(hide yes)
@@ -6838,6 +6827,17 @@
 		)
 		(property "MFP" "0603WAF1802T5E"
 			(at 91.44 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25810"
+			(at 91.44 36.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6931,17 +6931,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C22978"
-			(at 91.44 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 91.44 26.67 0)
 			(hide yes)
@@ -6966,6 +6955,17 @@
 		)
 		(property "MFP" "0603WAF3301T5E"
 			(at 91.44 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22978"
+			(at 91.44 26.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7059,17 +7059,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C22809"
-			(at 101.6 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 101.6 34.29 0)
 			(hide yes)
@@ -7094,6 +7083,17 @@
 		)
 		(property "MFP" "0603WAF1502T5E"
 			(at 101.6 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22809"
+			(at 101.6 34.29 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7188,17 +7188,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C1631"
-			(at 101.6 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Link" "https://jlcpcb.com/partdetail/1983-0603B682K500NT/C1631"
 			(at 101.6 26.67 0)
 			(hide yes)
@@ -7222,6 +7211,17 @@
 			)
 		)
 		(property "Critical" "N"
+			(at 101.6 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1631"
 			(at 101.6 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -7317,17 +7317,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C107035"
-			(at 109.22 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Link" "https://jlcpcb.com/partdetail/Yageo-CC0603JRNPO9BN121/C107035"
 			(at 109.22 31.75 0)
 			(hide yes)
@@ -7352,6 +7341,17 @@
 		)
 		(property "Critical" "N"
 			(at 109.22 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C107035"
+			(at 109.22 31.75 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7526,17 +7526,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C21122"
-			(at 111.76 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Link" "https://jlcpcb.com/partdetail/21834-CL10B223KB8NNNC/C21122"
 			(at 111.76 71.12 0)
 			(hide yes)
@@ -7561,6 +7550,17 @@
 		)
 		(property "Critical" "N"
 			(at 111.76 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21122"
+			(at 111.76 71.12 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7655,17 +7655,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C23630"
-			(at 93.98 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 93.98 72.39 0)
 			(hide yes)
@@ -7689,6 +7678,17 @@
 			)
 		)
 		(property "MFP" "CL10A225KO8NNNC"
+			(at 93.98 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23630"
 			(at 93.98 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -7784,17 +7784,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C23630"
-			(at 83.82 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 83.82 72.39 0)
 			(hide yes)
@@ -7818,6 +7807,17 @@
 			)
 		)
 		(property "MFP" "CL10A225KO8NNNC"
+			(at 83.82 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23630"
 			(at 83.82 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -7994,17 +7994,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C23630"
-			(at 100.33 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 100.33 97.79 0)
 			(hide yes)
@@ -8028,6 +8017,17 @@
 			)
 		)
 		(property "MFP" "CL10A225KO8NNNC"
+			(at 100.33 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23630"
 			(at 100.33 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -8123,17 +8123,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C23630"
-			(at 107.95 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 107.95 109.22 0)
 			(hide yes)
@@ -8157,6 +8146,17 @@
 			)
 		)
 		(property "MFP" "CL10A225KO8NNNC"
+			(at 107.95 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23630"
 			(at 107.95 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -8413,17 +8413,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C1596"
-			(at 167.64 21.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 167.64 21.59 0)
 			(hide yes)
@@ -8447,6 +8436,17 @@
 			)
 		)
 		(property "MFP" "0603B153K500NT"
+			(at 167.64 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1596"
 			(at 167.64 21.59 0)
 			(hide yes)
 			(show_name no)
@@ -8542,17 +8542,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C385987"
-			(at 182.88 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Link" ""
 			(at 182.88 36.83 0)
 			(hide yes)
@@ -8576,6 +8565,17 @@
 			)
 		)
 		(property "Critical" "N"
+			(at 182.88 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C385987"
 			(at 182.88 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -8670,17 +8670,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C21120"
-			(at 173.99 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Link" "https://jlcpcb.com/partdetail/21832-CL10B224KA8NNNC/C21120"
 			(at 173.99 58.42 0)
 			(hide yes)
@@ -8705,6 +8694,17 @@
 		)
 		(property "Critical" "N"
 			(at 173.99 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21120"
+			(at 173.99 58.42 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8798,17 +8798,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C14663"
-			(at 179.07 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 179.07 48.26 0)
 			(hide yes)
@@ -8833,6 +8822,17 @@
 		)
 		(property "MFP" "CC0603KRX7R9BB104"
 			(at 179.07 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 179.07 48.26 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8926,17 +8926,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C21120"
-			(at 173.99 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Link" "https://jlcpcb.com/partdetail/21832-CL10B224KA8NNNC/C21120"
 			(at 173.99 71.12 0)
 			(hide yes)
@@ -8961,6 +8950,17 @@
 		)
 		(property "Critical" "N"
 			(at 173.99 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21120"
+			(at 173.99 71.12 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9054,17 +9054,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C21120"
-			(at 173.99 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Link" "https://jlcpcb.com/partdetail/21832-CL10B224KA8NNNC/C21120"
 			(at 173.99 83.82 0)
 			(hide yes)
@@ -9089,6 +9078,17 @@
 		)
 		(property "Critical" "N"
 			(at 173.99 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21120"
+			(at 173.99 83.82 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9345,17 +9345,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C23630"
-			(at 200.66 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 200.66 54.61 0)
 			(hide yes)
@@ -9379,6 +9368,17 @@
 			)
 		)
 		(property "MFP" "CL10A225KO8NNNC"
+			(at 200.66 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23630"
 			(at 200.66 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -9474,17 +9474,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C16133"
-			(at 213.36 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 213.36 54.61 0)
 			(hide yes)
@@ -9508,6 +9497,17 @@
 			)
 		)
 		(property "MFP" "TAJB107K006RNJ"
+			(at 213.36 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C16133"
 			(at 213.36 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -9765,17 +9765,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C385987"
-			(at 168.91 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Link" ""
 			(at 168.91 114.3 0)
 			(hide yes)
@@ -9799,6 +9788,17 @@
 			)
 		)
 		(property "Critical" "N"
+			(at 168.91 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C385987"
 			(at 168.91 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -10056,17 +10056,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C129544"
-			(at 247.65 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 247.65 34.29 0)
 			(hide yes)
@@ -10091,6 +10080,17 @@
 		)
 		(property "MFP" "SMAJ5.0A-TP"
 			(at 247.65 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C129544"
+			(at 247.65 34.29 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10184,17 +10184,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C23153"
-			(at 240.03 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 240.03 99.06 0)
 			(hide yes)
@@ -10219,6 +10208,17 @@
 		)
 		(property "MFP" "0603WAF3902T5E"
 			(at 240.03 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23153"
+			(at 240.03 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10312,17 +10312,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C4190"
-			(at 240.03 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 240.03 104.14 0)
 			(hide yes)
@@ -10347,6 +10336,17 @@
 		)
 		(property "MFP" "0603WAF2201T5E"
 			(at 240.03 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C4190"
+			(at 240.03 104.14 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10440,17 +10440,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C23153"
-			(at 240.03 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 240.03 111.76 0)
 			(hide yes)
@@ -10475,6 +10464,17 @@
 		)
 		(property "MFP" "0603WAF3902T5E"
 			(at 240.03 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23153"
+			(at 240.03 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10568,17 +10568,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C4190"
-			(at 240.03 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 240.03 115.57 0)
 			(hide yes)
@@ -10603,6 +10592,17 @@
 		)
 		(property "MFP" "0603WAF2201T5E"
 			(at 240.03 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C4190"
+			(at 240.03 115.57 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10696,17 +10696,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C23153"
-			(at 240.03 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 240.03 123.19 0)
 			(hide yes)
@@ -10731,6 +10720,17 @@
 		)
 		(property "MFP" "0603WAF3902T5E"
 			(at 240.03 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23153"
+			(at 240.03 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10824,17 +10824,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C4190"
-			(at 240.03 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 240.03 127 0)
 			(hide yes)
@@ -10859,6 +10848,17 @@
 		)
 		(property "MFP" "0603WAF2201T5E"
 			(at 240.03 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C4190"
+			(at 240.03 127 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10952,17 +10952,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C23153"
-			(at 240.03 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 240.03 137.16 0)
 			(hide yes)
@@ -10987,6 +10976,17 @@
 		)
 		(property "MFP" "0603WAF3902T5E"
 			(at 240.03 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23153"
+			(at 240.03 137.16 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11080,17 +11080,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C4190"
-			(at 240.03 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 240.03 140.97 0)
 			(hide yes)
@@ -11115,6 +11104,17 @@
 		)
 		(property "MFP" "0603WAF2201T5E"
 			(at 240.03 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C4190"
+			(at 240.03 140.97 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11531,17 +11531,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C25804"
-			(at 107.95 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 107.95 53.34 0)
 			(hide yes)
@@ -11566,6 +11555,17 @@
 		)
 		(property "MFP" "0603WAF1002T5E"
 			(at 107.95 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 107.95 53.34 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11739,17 +11739,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C383398"
-			(at 124.46 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 124.46 147.32 0)
 			(hide yes)
@@ -11774,6 +11763,17 @@
 		)
 		(property "MFP" "MLZ2012A2R2WT000"
 			(at 124.46 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C383398"
+			(at 124.46 147.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11868,17 +11868,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C23630"
-			(at 133.35 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 133.35 151.13 0)
 			(hide yes)
@@ -11902,6 +11891,17 @@
 			)
 		)
 		(property "MFP" "CL10A225KO8NNNC"
+			(at 133.35 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23630"
 			(at 133.35 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -12078,17 +12078,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C23630"
-			(at 74.93 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 74.93 149.86 0)
 			(hide yes)
@@ -12112,6 +12101,17 @@
 			)
 		)
 		(property "MFP" "CL10A225KO8NNNC"
+			(at 74.93 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23630"
 			(at 74.93 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -12286,17 +12286,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C98969"
-			(at 142.24 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "Y"
 			(at 142.24 72.39 0)
 			(hide yes)
@@ -12320,6 +12309,17 @@
 			)
 		)
 		(property "MFP" "DRV8301DCAR"
+			(at 142.24 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C98969"
 			(at 142.24 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -12661,17 +12661,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C2923951"
-			(at 187.96 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 187.96 54.61 0)
 			(hide yes)
@@ -12695,6 +12684,17 @@
 			)
 		)
 		(property "MFP" "DSS26"
+			(at 187.96 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2923951"
 			(at 187.96 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -12788,17 +12788,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C266430"
-			(at 194.31 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 194.31 50.8 0)
 			(hide yes)
@@ -12823,6 +12812,17 @@
 		)
 		(property "MFP" "SMNR6028-220MT"
 			(at 194.31 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C266430"
+			(at 194.31 50.8 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12915,17 +12915,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C477918"
-			(at 101.6 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "Y"
 			(at 101.6 149.86 0)
 			(hide yes)
@@ -12949,6 +12938,17 @@
 			)
 		)
 		(property "MFP" "LM3671MFX-3.3/NOPB"
+			(at 101.6 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C477918"
 			(at 101.6 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -13214,17 +13214,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C25804"
-			(at 171.45 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 171.45 33.02 0)
 			(hide yes)
@@ -13249,6 +13238,17 @@
 		)
 		(property "MFP" "0603WAF1002T5E"
 			(at 171.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 171.45 33.02 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13425,17 +13425,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C16133"
-			(at 146.05 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 146.05 151.13 0)
 			(hide yes)
@@ -13459,6 +13448,17 @@
 			)
 		)
 		(property "MFP" "TAJB107K006RNJ"
+			(at 146.05 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C16133"
 			(at 146.05 151.13 0)
 			(hide yes)
 			(show_name no)

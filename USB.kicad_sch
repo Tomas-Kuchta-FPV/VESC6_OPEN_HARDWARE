@@ -2150,18 +2150,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 163.83 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC part no." "C2827654"
+		(property "LCSC" "C2827654"
 			(at 163.83 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2351,18 +2340,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 149.86 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC part no." "C84375"
+		(property "LCSC" "C84375"
 			(at 149.86 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -2458,18 +2436,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 121.92 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC part no." "C165948"
+		(property "LCSC" "C165948"
 			(at 121.92 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2775,18 +2742,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 144.78 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC part no." "C84375"
+		(property "LCSC" "C84375"
 			(at 144.78 107.95 0)
 			(hide yes)
 			(show_name no)

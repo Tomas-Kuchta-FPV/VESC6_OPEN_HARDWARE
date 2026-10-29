@@ -1204,17 +1204,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C23630"
-			(at 116.84 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 116.84 90.17 0)
 			(hide yes)
@@ -1238,6 +1227,17 @@
 			)
 		)
 		(property "MFP" "CL10A225KO8NNNC"
+			(at 116.84 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23630"
 			(at 116.84 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -1333,17 +1333,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C23630"
-			(at 166.37 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 166.37 91.44 0)
 			(hide yes)
@@ -1367,6 +1356,17 @@
 			)
 		)
 		(property "MFP" "CL10A225KO8NNNC"
+			(at 166.37 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23630"
 			(at 166.37 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -1462,17 +1462,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C22787"
-			(at 179.07 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 179.07 81.28 0)
 			(hide yes)
@@ -1497,6 +1486,17 @@
 		)
 		(property "MFP" "0603WAF1200T5E"
 			(at 179.07 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22787"
+			(at 179.07 81.28 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1590,17 +1590,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C124020"
-			(at 147.32 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "Y"
 			(at 147.32 82.55 0)
 			(hide yes)
@@ -1624,6 +1613,17 @@
 			)
 		)
 		(property "MFP" "TJA1051TK/3,118"
+			(at 147.32 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C124020"
 			(at 147.32 82.55 0)
 			(hide yes)
 			(show_name no)

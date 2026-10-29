@@ -1115,10 +1115,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "05c5c936-2ffa-4ce2-accf-79d1f7dfc26b")
 		(property "Reference" "R1302"
 			(at 121.92 87.63 90)
@@ -1173,17 +1173,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C21190"
-			(at 124.46 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 124.46 87.63 0)
 			(hide yes)
@@ -1208,6 +1197,17 @@
 		)
 		(property "MFP" "0603WAF1001T5E"
 			(at 124.46 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 124.46 87.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1242,10 +1242,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "874d22e9-40b2-4c0b-8609-2947e8a6261b")
 		(property "Reference" "C1301"
 			(at 177.8 82.55 90)
@@ -1302,17 +1302,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C14663"
-			(at 176.53 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 176.53 83.82 0)
 			(hide yes)
@@ -1337,6 +1326,17 @@
 		)
 		(property "MFP" "CC0603KRX7R9BB104"
 			(at 176.53 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 176.53 83.82 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1533,10 +1533,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d7c654c7-386f-428c-b45c-9176cc6ad3c9")
 		(property "Reference" "C1302"
 			(at 177.8 92.71 90)
@@ -1593,17 +1593,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C14663"
-			(at 176.53 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 176.53 91.44 0)
 			(hide yes)
@@ -1628,6 +1617,17 @@
 		)
 		(property "MFP" "CC0603KRX7R9BB104"
 			(at 176.53 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 176.53 91.44 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1743,10 +1743,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "ddedbb44-fd4a-4007-afc5-357edeef5e61")
 		(property "Reference" "R1301"
 			(at 113.03 87.63 90)
@@ -1801,17 +1801,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C21190"
-			(at 115.57 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "N"
 			(at 115.57 87.63 0)
 			(hide yes)
@@ -1836,6 +1825,17 @@
 		)
 		(property "MFP" "0603WAF1001T5E"
 			(at 115.57 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 115.57 87.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1870,10 +1870,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "dfd6bb25-5729-43ac-aa72-963b474a547d")
 		(property "Reference" "U1301"
 			(at 148.59 79.5782 0)
@@ -1930,17 +1930,6 @@
 				)
 			)
 		)
-		(property "LCSC part no." "C967633"
-			(at 148.59 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Critical" "Y"
 			(at 148.59 101.6 0)
 			(hide yes)
@@ -1964,6 +1953,17 @@
 			)
 		)
 		(property "MFP" ""
+			(at 148.59 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C967633"
 			(at 148.59 101.6 0)
 			(hide yes)
 			(show_name no)

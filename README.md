@@ -1,27 +1,44 @@
 # VESC6_OPEN_HARDWARE
-Open source implementation of the vesc 6 hardware schematics published by Benjamin Vedder. Built in KiCAD and contains JLCPCB component IDs for everthing populated on the board so anyone can order their own!
+> WiP Stage: Designed (asked for funding)  
+Open source powerfull VESC that has 2 channels and it's based on the VESC 6 schematic.  
 
 ## Design
-* Continuous current: 70A; instantaneous current: 120A (With proper heat sinking)
+* 2 channels connected through CAN
+* 4 layered PCB
+* Continuous current: 70A per ch; instantaneous current: 120A (With proper heat sinking)
 * STL130N6F7 MOSFETs rated to switch up to 130A, software limits it to 120A.
 * Voltage: 10V-60V(Cells: 3-13S)
-* Ports: USB, CAN x2, ADC, on/off switch, SWD, Hall Sensors
+* Ports: USB-C, CAN x2, ADC, on/off switch, SWD, Hall Sensors
 * LSM6DS3 IMU
 * JST-SH connectors (6pin and 4 pin)
 * Holes either side of the MOSFETs allow for even clamping of a simple rectangular heatsink.
 
+Possible future upgrades with built in ESP for VESC express.  
 
 ## Manufacture
-* Economy PCBA maufacture can be used without placing the IMU - 5 boards approx £160GBP
-* Standard PCBA manufacture with placing the IMU costs more - 5 boards approx £200GBP
+* Commonly usable and easy to source components so you can either have JLCPCB make it for you or assemble it youself.
 * Custom board software build as well as hardware configuration files are available in the software folder.
-* This project will work even if neither of the internal traces are present in the board. The internal layers are ground planes as well as doubling up the trace to supply the power stage from the battery. 
-So you can just delete the two internal layers from the Gerber file and populate the 2 layer board.
+  * Further testing required once I assemble it
 
-## Testing so far...
-Release 1 has been flashed and fully tested on the bench to verify current feedback, backEMF sensing, temperature sensing and IMU work as expected.
-Hardware has been field tested by several months of daily use (ebike) pulling sustained power over 2kW with no issues.
+![image](/Images/top.png "top")  
+![image](/Images/isometric.png "isometric")  
 
-![image](https://github.com/craigg96/VESC6_OPEN_HARDWARE/blob/main/Images/top.png?raw=true "top")
-![image](https://github.com/craigg96/VESC6_OPEN_HARDWARE/blob/main/Images/isometric.png?raw=true "isometric")
-![image](https://github.com/craigg96/VESC6_OPEN_HARDWARE/blob/main/Images/IMG_20250928_213952.jpg?raw=true "isometric")
+## Credits
+https://github.com/craigg96/VESC6_OPEN_HARDWARE  
+
+## Motivation
+So I love hoverboard motors, but it turns up that a lot of the ESCs are not compatible with the custom FW. And at the end of summer holidays I've designed Hover Cruiser. It's an electric skateboard made out of hoverboard motors. And also my brother made his own gocart powered by hoverboard motors. So thats why I made this modification for 2 channels.  
+![image](https://github.com/Tomas-Kuchta-FPV/HoverCruiser/raw/main/Electronics%20diagram.drawio.png "HoverCruiser Electronics")  
+![image](https://github.com/Tomas-Kuchta-FPV/HoverCruiser/raw/main/Images/BoardIso.png "HoverCruiser")  
+
+## BOM
+| Item                       | Price          |
+| -------------------------- | -------------- |
+| LCSC                       | $114.67        |
+| LCSC Shipping              | $13.24         |
+| LCSC Tarif                 | $38.85         |
+| JLCPCB                     | $38.42         |
+| JLCPCB Shipping            | $11.86         |
+| JLCPCB tarif               | $21.76         |
+| Assembly & other materials | Freeeee labor! |
+| Total                      | $238.80        |
