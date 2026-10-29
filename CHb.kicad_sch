@@ -5,7 +5,9 @@
 	(uuid "66d4ad5c-423e-43ad-b5be-1c90dbb6a896")
 	(paper "A4")
 	(title_block
-		(rev "A")
+		(title "2ch VESC based on VESC6")
+		(rev "B")
+		(company "craigg96, Tomáš Kuchta")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic_MountingPin:Conn_01x04_MountingPin"

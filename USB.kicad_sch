@@ -5,7 +5,9 @@
 	(uuid "ab4b7783-905d-4adb-b520-733fd955a527")
 	(paper "A4")
 	(title_block
-		(rev "A")
+		(title "2ch VESC based on VESC6")
+		(rev "B")
+		(company "craigg96, Tomáš Kuchta")
 	)
 	(lib_symbols
 		(symbol "Device:R"

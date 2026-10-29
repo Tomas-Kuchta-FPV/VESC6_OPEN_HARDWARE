@@ -5,9 +5,10 @@
 	(uuid "e07c4b69-e0b4-4217-9b28-38d44f166b31")
 	(paper "A4")
 	(title_block
+		(title "2ch VESC based on VESC6")
 		(date "2025-03-23")
-		(rev "A")
-		(comment 1 "Drawn By: CG")
+		(rev "B")
+		(company "craigg96, Tomáš Kuchta")
 	)
 	(lib_symbols
 		(symbol "Device:C"

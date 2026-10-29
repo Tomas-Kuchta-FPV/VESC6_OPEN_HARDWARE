@@ -5,9 +5,10 @@
 	(uuid "8bc2c25a-a1f1-4ce8-b96a-a4f8f4c35079")
 	(paper "A4")
 	(title_block
+		(title "2ch VESC based on VESC6")
 		(date "2025-03-23")
-		(rev "A")
-		(comment 1 "Drawn By: CG")
+		(rev "B")
+		(company "craigg96, Tomáš Kuchta")
 	)
 	(lib_symbols
 		(symbol "Mechanical:MountingHole"

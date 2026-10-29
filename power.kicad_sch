@@ -5,7 +5,9 @@
 	(uuid "03f8c78c-42ae-4e38-9947-e5d5627a30fa")
 	(paper "A4")
 	(title_block
-		(rev "A")
+		(title "2ch VESC based on VESC6")
+		(rev "B")
+		(company "craigg96, Tomáš Kuchta")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x01"
